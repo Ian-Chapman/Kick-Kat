@@ -24,13 +24,29 @@ public class ThirdPersonMovement : MonoBehaviour
 
     CarmellaAnimationManager carmellaAnimationManager;
 
+    [SerializeField] private UI_Inventory uiInventory;
+    private Inventory inventory;
+
     void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         carmellaAnimationManager = gameObject.GetComponent<CarmellaAnimationManager>();
+
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
+
+        ItemWorld.SpawnItemWorld(new Vector3(-3, 2, 3), new Item { itemType = Item.ItemType.Points, amount = 1 });
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -60,6 +76,12 @@ public class ThirdPersonMovement : MonoBehaviour
             moveVector += Physics.gravity;
         }
         controller.Move(moveVector * Time.deltaTime);
+
+        if (Input.GetKeyDown("x"))
+        {
+            foreach (Item item in inventory.GetItemList())
+                inventory.RemoveItem(item);
+        }
 
         //jump();
     }

@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/KickKat.unity
+    guid: 81ab7cafb41236d4a8ddfe402ac9f0c6
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: c850ee8c3b14cc8459e7e186857cf567
+  - enabled: 1
+    path: Assets/Scenes/TestingGround.unity
+    guid: 6b35bfb764261dc4f81ff43c8de6cdae
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 2f4ecfd14aea4e44ab7d91410ce53979, type: 2}
