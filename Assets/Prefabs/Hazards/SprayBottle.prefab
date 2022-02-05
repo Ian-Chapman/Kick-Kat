@@ -5056,5 +5056,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f9e4cc164c3be438a44a38f0173d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 8668720016892908859}
-  sprayParticleSystem: {fileID: 8668720016892908862}
+  hazardParticleSystems:
+  - {fileID: 8668720016892908862}
