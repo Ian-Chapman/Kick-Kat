@@ -83,27 +83,27 @@ public class ThirdPersonMovement : MonoBehaviour
                 inventory.RemoveItem(item);
         }
 
-        //jump();
+        jump();
     }
 
-    // still a bit buggy, but its working
-    //public void jump()
-    //{
-    //    groundedPlayer = controller.isGrounded;
-    //    if (groundedPlayer && playerVelocity.y < 0)
-    //    {
-    //        playerVelocity.y = 0f;
-    //    }
+    //still a bit buggy, but its working
+    public void jump()
+    {
+        groundedPlayer = controller.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
+        {
+            playerVelocity.y = 0f;
+        }
 
 
-    //    // Changes the height position of the player..
-    //    if (Input.GetButtonDown("Jump") && groundedPlayer)
-    //    {
-    //        playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-    //    }
+        // Changes the height position of the player..
+        if (Input.GetButtonDown("Jump") && groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }
 
-    //    playerVelocity.y += gravityValue * Time.deltaTime;
-    //    controller.Move(playerVelocity * Time.deltaTime);
-    //}
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
+    }
 
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarmellaAnimationManager : MonoBehaviour
 {
+    ThirdPersonMovement thirdPersonMovement;
 
     static public Rigidbody body;
     static Animator animator;
@@ -24,6 +25,7 @@ public class CarmellaAnimationManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        thirdPersonMovement = gameObject.GetComponent<ThirdPersonMovement>();
         body = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         //isWalkingHash = Animator.StringToHash("isWalking");
@@ -94,7 +96,8 @@ public class CarmellaAnimationManager : MonoBehaviour
         //Changes the height position of the player..
         if (jumpPressed && ThirdPersonMovement.groundedPlayer)
         {
-            ThirdPersonMovement.playerVelocity.y += Mathf.Sqrt(ThirdPersonMovement.jumpHeight * -3.0f * ThirdPersonMovement.gravityValue);
+            //ThirdPersonMovement.playerVelocity.y += Mathf.Sqrt(ThirdPersonMovement.jumpHeight * -3.0f * ThirdPersonMovement.gravityValue);
+            thirdPersonMovement.jump();
             animator.SetBool("isJumpingForward", true);
         }
         else
@@ -142,7 +145,7 @@ public class CarmellaAnimationManager : MonoBehaviour
         if (Input.GetButton("Fire1") && isKick2 == true)
         {
             animator.SetBool("isKick2", true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.6f);
             animator.SetBool("isKick2", false);
             isKick3 = true;
         }
@@ -150,7 +153,7 @@ public class CarmellaAnimationManager : MonoBehaviour
         if (Input.GetButton("Fire1") && isKick3 == true)
         {
             animator.SetBool("isKick3", true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.6f);
             animator.SetBool("isKick3", false);
             isFinishingKick = true;
         }
@@ -158,7 +161,7 @@ public class CarmellaAnimationManager : MonoBehaviour
         if (Input.GetButton("Fire1") && isFinishingKick == true)
         {
             animator.SetBool("isFinishingKick", true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.6f);
             animator.SetBool("isFinishingKick", false);
             isKick1 = false;
             isKick2 = false;
