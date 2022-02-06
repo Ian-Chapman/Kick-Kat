@@ -7,6 +7,13 @@ public class HazardScript : MonoBehaviour
     [SerializeField]
     private List<ParticleSystem> hazardParticleSystems;
 
+    public GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.Find("CatGirlChar");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         // When the player enters the area, play the hazard particle system (Spray bottle water, smoke, etc.)

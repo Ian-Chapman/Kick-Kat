@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 8ce2d7129f9056b44a03146722321a91
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: control_panel
+    100004: group_0
+    100006: group_1
+    100008: group_2
+    100010: group_2.001
+    100012: group_2.002
+    100014: group_3
+    100016: Lamp
+    100018: power_button
+    100020: //RootNode
+    100022: SketchUp
+    100024: SketchUp.001
+    100026: SketchUp.002
+    100028: SketchUp.003
+    100030: SketchUp.004
+    100032: skp_camera_Last_Saved_SketchUp_View
+    400000: Camera
+    400002: control_panel
+    400004: group_0
+    400006: group_1
+    400008: group_2
+    400010: group_2.001
+    400012: group_2.002
+    400014: group_3
+    400016: Lamp
+    400018: power_button
+    400020: //RootNode
+    400022: SketchUp
+    400024: SketchUp.001
+    400026: SketchUp.002
+    400028: SketchUp.003
+    400030: SketchUp.004
+    400032: skp_camera_Last_Saved_SketchUp_View
+    2000000: Camera
+    2000002: skp_camera_Last_Saved_SketchUp_View
+    2100000: Hardware_Zinc
+    2100002: material
+    2100004: Color_003
+    2100006: Color_009
+    2100008: Translucent_Glass_Gray
+    2300000: control_panel
+    2300002: group_0
+    2300004: group_1
+    2300006: group_2
+    2300008: group_2.001
+    2300010: group_2.002
+    2300012: group_3
+    2300014: power_button
+    2300016: SketchUp
+    2300018: SketchUp.001
+    2300020: SketchUp.002
+    2300022: SketchUp.003
+    2300024: SketchUp.004
+    3300000: control_panel
+    3300002: group_0
+    3300004: group_1
+    3300006: group_2
+    3300008: group_2.001
+    3300010: group_2.002
+    3300012: group_3
+    3300014: power_button
+    3300016: SketchUp
+    3300018: SketchUp.001
+    3300020: SketchUp.002
+    3300022: SketchUp.003
+    3300024: SketchUp.004
+    4300000: SketchUp.004
+    4300002: SketchUp.003
+    4300004: SketchUp.002
+    4300006: SketchUp.001
+    4300008: SketchUp
+    4300010: group_3
+    4300012: group_2.002
+    4300014: group_2.001
+    4300016: group_2
+    4300018: group_1
+    4300020: group_0
+    4300022: control_panel
+    4300024: power_button
+    10800000: Lamp
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

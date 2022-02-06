@@ -23,6 +23,7 @@ public class ThirdPersonMovement : MonoBehaviour
     float turnSmoothVelocity;
 
     CarmellaAnimationManager carmellaAnimationManager;
+    RoombaController roombaController;
 
     [SerializeField] private UI_Inventory uiInventory;
     private Inventory inventory;
@@ -31,6 +32,8 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         controller = gameObject.GetComponent<CharacterController>();
         carmellaAnimationManager = gameObject.GetComponent<CarmellaAnimationManager>();
+        roombaController = gameObject.GetComponent<RoombaController>();;
+
 
         inventory = new Inventory();
         uiInventory.SetInventory(inventory);
@@ -46,7 +49,10 @@ public class ThirdPersonMovement : MonoBehaviour
             inventory.AddItem(itemWorld.GetItem());
             itemWorld.DestroySelf();
         }
+
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -86,7 +92,6 @@ public class ThirdPersonMovement : MonoBehaviour
         jump();
     }
 
-    //still a bit buggy, but its working
     public void jump()
     {
         groundedPlayer = controller.isGrounded;
@@ -94,7 +99,6 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             playerVelocity.y = 0f;
         }
-
 
         // Changes the height position of the player..
         if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -104,6 +108,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+    }
+
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if ((other.gameObject.tag == "Roomba") || (other.gameObject.tag == "StoveBurner"))
+        {
+            this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
+        }
     }
 
 }

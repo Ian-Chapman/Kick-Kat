@@ -1,0 +1,19 @@
+
+
+HOW CAN I ADD A ROOMBA TO MY GAME???
+
+1- Drag the prefabs located in the Prefabs folder into the scene
+
+2- Go to Window/Package Manager and install PostProcessing package
+
+3- Put all the waypoints into the waypoints list of  roombaScript
+
+4- Create a empty gameobject, drag it to StopPosition variable, place it where you want, it is the stop position
+
+5- Add rigidbody, a navMesh agent and a collider to the roomba, deactivate gravity option of the rigidbody and configure the navMeshAgent
+
+6- Open the Navigation window, set your roomba nav mesh parameters and press bake
+
+You can not have free control of the Roomba in mobile version, but you can see the artificial intelligence working
+
+Important[if the post processing is not working, you have to delete the camera of the roomba model and create a new one]
