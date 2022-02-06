@@ -11,7 +11,11 @@ public class UIButtonManager : MonoBehaviour
 
     private void Start()
     {
-        pauseMenu.SetActive(false);
+        if(pauseMenu != null) //should fix issues regarding the pause menu not being pressent on the main menu
+        {
+            pauseMenu.SetActive(false); 
+        }
+
     }
 
     private void Update()
