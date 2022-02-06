@@ -789,7 +789,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4724
+  m_Name: pb_Mesh-106182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1229,7 +1229,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3622
+  m_Name: pb_Mesh-105080
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2702,7 +2702,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4120
+  m_Name: pb_Mesh-105578
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3067,7 +3067,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4766
+  m_Name: pb_Mesh-106224
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3298,7 +3298,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4162
+  m_Name: pb_Mesh-105620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4432,8 +4432,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4514,7 +4514,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4710
+  m_Name: pb_Mesh-106168
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4976,8 +4976,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5713,7 +5713,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4780
+  m_Name: pb_Mesh-106238
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5931,8 +5931,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6540,7 +6540,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4064
+  m_Name: pb_Mesh-105522
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6704,7 +6704,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4134
+  m_Name: pb_Mesh-105592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8621,7 +8621,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4092
+  m_Name: pb_Mesh-105550
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9168,7 +9168,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4148
+  m_Name: pb_Mesh-105606
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10677,7 +10677,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3538
+  m_Name: pb_Mesh-104996
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10841,7 +10841,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4738
+  m_Name: pb_Mesh-106196
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11408,7 +11408,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4106
+  m_Name: pb_Mesh-105564
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12785,7 +12785,7 @@ RectTransform:
   m_GameObject: {fileID: 810943778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4684, y: 1.4684, z: 1.4684}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1000193574}
@@ -12794,7 +12794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -429, y: -212}
+  m_AnchoredPosition: {x: -421, y: -259}
   m_SizeDelta: {x: 781.9168, y: 296.614}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810943780
@@ -12819,8 +12819,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "KICK \n    KAT"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -13376,7 +13376,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4752
+  m_Name: pb_Mesh-106210
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15289,8 +15289,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "KICK \n    KAT"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -15937,7 +15937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643199086296160, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.79
+      value: -5.145
       objectReference: {fileID: 0}
     - target: {fileID: 4643199086296160, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16965,7 +16965,7 @@ GameObject:
   - component: {fileID: 1106648693}
   - component: {fileID: 1106648692}
   m_Layer: 5
-  m_Name: Continue
+  m_Name: ContinueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16989,7 +16989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 25}
+  m_AnchoredPosition: {x: -160, y: 25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1106648692
@@ -17056,8 +17056,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ccc79b43b55b71f4f9251f16379751e4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -17147,7 +17147,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4696
+  m_Name: pb_Mesh-106154
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17404,6 +17404,7 @@ GameObject:
   - component: {fileID: 1135225638}
   - component: {fileID: 1135225637}
   - component: {fileID: 1135225636}
+  - component: {fileID: 1135225640}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -17440,10 +17441,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -17494,6 +17495,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1135225640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135225635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883d55cafbad5994188baba3f76eceba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1135727314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17775,8 +17788,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17864,7 +17877,7 @@ GameObject:
   - component: {fileID: 1164136019}
   - component: {fileID: 1164136018}
   m_Layer: 5
-  m_Name: Quit
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17888,7 +17901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -75}
+  m_AnchoredPosition: {x: -194.8, y: -75}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1164136018
@@ -17934,7 +17947,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1164136019}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1135225640}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: OnQuitButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1164136019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17955,8 +17980,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ccc79b43b55b71f4f9251f16379751e4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -18820,7 +18845,7 @@ GameObject:
   - component: {fileID: 1213993663}
   - component: {fileID: 1213993662}
   m_Layer: 5
-  m_Name: Options
+  m_Name: OptionsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18844,7 +18869,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -25}
+  m_AnchoredPosition: {x: -130, y: -25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1213993662
@@ -18890,7 +18915,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1213993663}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1135225640}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: OnOptionsButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1213993663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18911,8 +18948,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ccc79b43b55b71f4f9251f16379751e4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -20363,7 +20400,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4682
+  m_Name: pb_Mesh-106140
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20996,7 +21033,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3566
+  m_Name: pb_Mesh-105024
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21463,7 +21500,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4078
+  m_Name: pb_Mesh-105536
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23437,8 +23474,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -23519,7 +23556,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3608
+  m_Name: pb_Mesh-105066
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25168,8 +25205,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Options
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -27318,7 +27355,7 @@ RectTransform:
   m_GameObject: {fileID: 1761394354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.1432903, y: 2.1432903, z: 2.1432903}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1967713634}
@@ -27330,8 +27367,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -99.21289, y: 100}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: -283, y: 218}
+  m_SizeDelta: {x: 263.55, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761394356
 MonoBehaviour:
@@ -27566,8 +27603,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -27950,7 +27987,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3594
+  m_Name: pb_Mesh-105052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28825,7 +28862,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3552
+  m_Name: pb_Mesh-105010
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29190,7 +29227,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3524
+  m_Name: pb_Mesh-104982
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30480,7 +30517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 75}
+  m_AnchoredPosition: {x: -190, y: 75}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967713635
@@ -30526,7 +30563,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1967713636}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1135225640}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: OnNewGameButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1967713636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30547,8 +30596,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ccc79b43b55b71f4f9251f16379751e4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -31539,8 +31588,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Options
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498fa808d28d6174cabb907e7c4bf7db, type: 2}
-  m_sharedMaterial: {fileID: -2690216622190704214, guid: 498fa808d28d6174cabb907e7c4bf7db,
+  m_fontAsset: {fileID: 11400000, guid: ebb4e6cfd88fa694fa2d32f73bb6586c, type: 2}
+  m_sharedMaterial: {fileID: 1615971747925042691, guid: ebb4e6cfd88fa694fa2d32f73bb6586c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -32540,7 +32589,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3580
+  m_Name: pb_Mesh-105038
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
