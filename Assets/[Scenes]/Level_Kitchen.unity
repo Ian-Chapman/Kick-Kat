@@ -21494,7 +21494,8 @@ AudioSource:
   m_GameObject: {fileID: 946754714}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 0beba8c629a0cb4408d1f92eaeb001d6,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 85a9e09792b6c794c8135ad274316f5f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -22566,7 +22567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1257495944, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.07785872
+      value: 0.07785873
       objectReference: {fileID: 0}
     - target: {fileID: 1257495944, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.y
@@ -41208,7 +41209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 438894758}
-  audioSource: {fileID: 0}
 --- !u!1001 &1824501914
 PrefabInstance:
   m_ObjectHideFlags: 0
