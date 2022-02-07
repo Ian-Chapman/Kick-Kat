@@ -13,14 +13,10 @@ public class RoombaController : MonoBehaviour
     public GameObject player;
     public NavMeshAgent roomba;
 
-    //public bool isCleaning = false;
-
     public float playerPos;
 
-    // Start is called before the first frame update
     void Start()
     {
-        //isCleaning = true;
         player = GameObject.Find("CatGirlChar");
     }
 

@@ -8,7 +8,7 @@ public class UIButtonManager : MonoBehaviour
 
     public GameObject pauseMenu;
     private bool isPaused = false;
-    public AudioSource audioSource;
+    //public AudioSource audioSource;
 
 
     private void Start()
@@ -43,7 +43,7 @@ public class UIButtonManager : MonoBehaviour
 
     public void OnNewGameButtonPressed()
     {
-        audioSource.Stop();
+        //audioSource.Stop();
         SceneManager.LoadScene("Level_Kitchen");
        //audioSource.Stop();
     }
