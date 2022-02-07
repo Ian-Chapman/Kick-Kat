@@ -11,6 +11,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform cam;
     public AudioSource burn;
     public AudioSource crash;
+    public AudioSource jumping;
 
     [SerializeField]
     static public float speed = 6f;
@@ -106,6 +107,7 @@ public class ThirdPersonMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -1.8f * gravityValue);
+            jumping.Play();
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;

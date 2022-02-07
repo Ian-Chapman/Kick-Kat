@@ -8,9 +8,14 @@ public class UIButtonManager : MonoBehaviour
 
     public GameObject pauseMenu;
     private bool isPaused = false;
+    public AudioSource audioSource;
+
 
     private void Start()
     {
+
+        //audioSource = gameObject.GetComponent<AudioSource>();
+
         if(pauseMenu != null) //should fix issues regarding the pause menu not being pressent on the main menu
         {
             pauseMenu.SetActive(false); 
@@ -38,7 +43,9 @@ public class UIButtonManager : MonoBehaviour
 
     public void OnNewGameButtonPressed()
     {
+        audioSource.Stop();
         SceneManager.LoadScene("Level_Kitchen");
+       //audioSource.Stop();
     }
 
     public void OnContinueButtonPressed()
