@@ -12,7 +12,11 @@ public class BouncyPlatforms : MonoBehaviour
         {
             // Bounce using the ThirdPersonMovement and Character Controller
             if (ThirdPersonMovement.playerVelocity.y < 0.0f)
+            {
                 ThirdPersonMovement.playerVelocity.y += bounceHeight;
+                this.GetComponent<AudioSource>().Play();
+            }
+                
         }
     }
 }

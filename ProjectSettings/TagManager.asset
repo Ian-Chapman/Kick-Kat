@@ -11,6 +11,7 @@ TagManager:
   - Roomba
   - Floor
   - StoveBurner
+  - Glass
   layers:
   - Default
   - TransparentFX

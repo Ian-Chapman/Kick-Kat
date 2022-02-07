@@ -9,6 +9,8 @@ public class ThirdPersonMovement : MonoBehaviour
     Vector3 moveVector;
     static public CharacterController controller;
     public Transform cam;
+    public AudioSource burn;
+    public AudioSource crash;
 
     [SerializeField]
     static public float speed = 6f;
@@ -113,9 +115,16 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if ((other.gameObject.tag == "Roomba") || (other.gameObject.tag == "StoveBurner"))
+        if ((other.gameObject.tag == "Roomba"))
         {
             this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
+            crash.Play();
+        }
+
+        if ((other.gameObject.tag == "StoveBurner"))
+        {
+            this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
+            burn.Play();
         }
     }
 
