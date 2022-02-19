@@ -15,11 +15,15 @@ public class CarmellaAnimationManager : MonoBehaviour
     private Vector3 m_vPrevVel;
     private Vector3 m_vDirection;
 
-    bool isRunPunch = false;
-    bool isKick1 = false;
-    bool isKick2 = false;
-    bool isKick3 = false;
-    bool isFinishingKick = false;
+    //bool isRunPunch = false;
+    //bool isKick1 = false;
+    //bool isKick2 = false;
+    //bool isKick3 = false;
+    //bool isFinishingKick = false;
+
+
+
+
 
 
     // Start is called before the first frame update
@@ -124,51 +128,6 @@ public class CarmellaAnimationManager : MonoBehaviour
         else
             animator.SetBool("isRunKick", false);
 
-
-        StartCoroutine(KickCombo());
-
-    }
-
-    //Chaining kicking combos together
-    IEnumerator KickCombo()
-    {
-        isKick1 = true;
-
-        if (Input.GetButton("Fire1") && isKick1 == true)
-        {
-            animator.SetBool("isKick1", true);
-            yield return new WaitForSeconds(0.5f);
-            animator.SetBool("isKick1", false);
-            isKick2 = true;
-        }
-
-        if (Input.GetButton("Fire1") && isKick2 == true)
-        {
-            animator.SetBool("isKick2", true);
-            yield return new WaitForSeconds(0.6f);
-            animator.SetBool("isKick2", false);
-            isKick3 = true;
-        }
-
-        if (Input.GetButton("Fire1") && isKick3 == true)
-        {
-            animator.SetBool("isKick3", true);
-            yield return new WaitForSeconds(0.6f);
-            animator.SetBool("isKick3", false);
-            isFinishingKick = true;
-        }
-
-        if (Input.GetButton("Fire1") && isFinishingKick == true)
-        {
-            animator.SetBool("isFinishingKick", true);
-            yield return new WaitForSeconds(0.6f);
-            animator.SetBool("isFinishingKick", false);
-            isKick1 = false;
-            isKick2 = false;
-            isKick3 = false;
-            isFinishingKick = false;
-        }
-        
     }
 }
 
