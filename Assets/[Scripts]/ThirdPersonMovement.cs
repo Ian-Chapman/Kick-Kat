@@ -44,18 +44,6 @@ public class ThirdPersonMovement : MonoBehaviour
         ItemWorld.SpawnItemWorld(new Vector3(-3, 2, 3), new Item { itemType = Item.ItemType.Points, amount = 1 });
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
-        if (itemWorld != null)
-        {
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroySelf();
-        }
-
-    }
-
-
 
     // Update is called once per frame
     void Update()
@@ -114,9 +102,15 @@ public class ThirdPersonMovement : MonoBehaviour
         controller.Move(playerVelocity * Time.deltaTime);
     }
 
-
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
+        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
+
         if ((other.gameObject.tag == "Roomba"))
         {
             this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level

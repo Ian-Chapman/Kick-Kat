@@ -12,6 +12,7 @@ TagManager:
   - Floor
   - StoveBurner
   - Glass
+  - Platform
   layers:
   - Default
   - TransparentFX
