@@ -27,6 +27,9 @@ public class HazardScript : MonoBehaviour
                 }
             }
 
+            // Reset Player's Position
+            other.transform.position = new Vector3(20.3f, 1.7f, -15.456f);
+
             if (this.tag == "Glass")
             {
                 this.GetComponent<AudioSource>().Play();

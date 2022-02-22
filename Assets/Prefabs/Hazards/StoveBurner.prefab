@@ -1,5 +1,83 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7158462073491071473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2244469680361389316}
+  - component: {fileID: 802359702520737881}
+  - component: {fileID: 5361841012100360874}
+  - component: {fileID: 1985527104851262897}
+  m_Layer: 0
+  m_Name: Burners
+  m_TagString: StoveBurner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2244469680361389316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158462073491071473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8476088811005290053}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &802359702520737881
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158462073491071473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.1, z: 0.9}
+  m_Center: {x: 0.7, y: 1.5, z: 0.04}
+--- !u!65 &5361841012100360874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158462073491071473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.1, z: 0.9}
+  m_Center: {x: -0.7, y: 1.5, z: 0.04}
+--- !u!114 &1985527104851262897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158462073491071473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f9e4cc164c3be438a44a38f0173d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hazardParticleSystems:
+  - {fileID: 8476088812836298492}
+  - {fileID: 8476088812357486217}
+  - {fileID: 8476088812534980458}
+  - {fileID: 8476088811648874133}
+  player: {fileID: 0}
 --- !u!1 &8476088811005562091
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,9 +90,6 @@ GameObject:
   - component: {fileID: 8476088811004581385}
   - component: {fileID: 8476088811003116307}
   - component: {fileID: 8476088811007670021}
-  - component: {fileID: 8476088811003116304}
-  - component: {fileID: 8476088811003116318}
-  - component: {fileID: 8476088811003116305}
   m_Layer: 0
   m_Name: StoveBurner
   m_TagString: Untagged
@@ -29,7 +104,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8476088811005562091}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -15.973538, y: 0, z: -12.037251}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -38,6 +113,7 @@ Transform:
   - {fileID: 8476088812357486219}
   - {fileID: 8476088812534980460}
   - {fileID: 8476088811648874135}
+  - {fileID: 2244469680361389316}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -105,49 +181,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4947ffe769ebaa048b947524d3d22dad, type: 3}
---- !u!114 &8476088811003116304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8476088811005562091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f9e4cc164c3be438a44a38f0173d10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hazardParticleSystems:
-  - {fileID: 8476088812836298492}
-  - {fileID: 8476088812357486217}
-  - {fileID: 8476088812534980458}
-  - {fileID: 8476088811648874133}
---- !u!65 &8476088811003116318
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8476088811005562091}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.1, z: 0.9}
-  m_Center: {x: 0.7, y: 1.5, z: 0.04}
---- !u!65 &8476088811003116305
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8476088811005562091}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.1, z: 0.9}
-  m_Center: {x: -0.7, y: 1.5, z: 0.04}
 --- !u!1 &8476088811648874134
 GameObject:
   m_ObjectHideFlags: 0
