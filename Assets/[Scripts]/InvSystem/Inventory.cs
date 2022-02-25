@@ -62,7 +62,7 @@ public class Inventory
             }
             if (itemInInventory != null && itemInInventory.amount <= 0)
             {
-                itemList.Remove(item); Debug.Log("hello");
+                itemList.Remove(itemInInventory); Debug.Log("hello");
             }
         }
         else
