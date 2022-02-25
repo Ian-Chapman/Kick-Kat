@@ -38,7 +38,7 @@ public class ThirdPersonMovement : MonoBehaviour
         roombaController = gameObject.GetComponent<RoombaController>();;
 
 
-        inventory = new Inventory();
+        inventory = new Inventory(UseItem);
         uiInventory.SetInventory(inventory);
 
         ItemWorld.SpawnItemWorld(new Vector3(-3, 2, 3), new Item { itemType = Item.ItemType.Points, amount = 1 });
@@ -76,8 +76,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (Input.GetKeyDown("x"))
         {
-            foreach (Item item in inventory.GetItemList())
-                inventory.RemoveItem(item);
+            UseItem(new Item { itemType = Item.ItemType.tempPup, amount = 1 });
         }
 
         jump();
@@ -123,5 +122,26 @@ public class ThirdPersonMovement : MonoBehaviour
             burn.Play();
         }
     }
+    
+    private void UseItem(Item item)
+    {
+        
+        switch (item.itemType)
+        {
+            case Item.ItemType.Points:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.Points, amount = 1 });
+                // add behaviour here
+                break;
 
+            case Item.ItemType.PowerUp:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.PowerUp, amount = 1 });
+                // add behaviour here
+                break;
+
+            case Item.ItemType.tempPup:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.tempPup, amount = 1 });
+                // add behaviour here
+                break;
+        }
+    }
 }
