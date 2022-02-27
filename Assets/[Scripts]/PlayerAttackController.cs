@@ -8,6 +8,10 @@ public class PlayerAttackController : MonoBehaviour
     public int numOfClicks;
     float prevClickTime;
     public float maxComboDelay = 0.8f;
+    private int prevSound, currSound = -1;
+
+    public AudioClip[] audioClips;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +36,7 @@ public class PlayerAttackController : MonoBehaviour
             if (numOfClicks == 1)
             {
                 animator.SetBool("isKick1", true);
-                
+                PlayAttack();
             }
             //Max possible attacks in combo is clamped at 4
             numOfClicks = Mathf.Clamp(numOfClicks, 0, 4);
@@ -45,6 +49,7 @@ public class PlayerAttackController : MonoBehaviour
         if (numOfClicks >= 2)
         {
             animator.SetBool("isKick2", true);
+            PlayAttack();
         }
         else
         {
@@ -58,6 +63,7 @@ public class PlayerAttackController : MonoBehaviour
         if (numOfClicks >= 3)
         {
             animator.SetBool("isKick3", true);
+            PlayAttack();
         }
         else
         {
@@ -71,6 +77,7 @@ public class PlayerAttackController : MonoBehaviour
         if (numOfClicks >= 4)
         {
             animator.SetBool("isFinishingKick", true);
+            PlayAttack();
         }
         else
         {
@@ -86,5 +93,21 @@ public class PlayerAttackController : MonoBehaviour
         animator.SetBool("isKick3", false);
         animator.SetBool("isFinishingKick", false);
         numOfClicks = 0;
+    }
+
+    public void PlayAttack()
+    {
+        prevSound = currSound;
+        currSound = Random.Range(0, 5);
+        if (currSound == prevSound)
+        {
+            currSound = prevSound;
+            PlayAttack();
+        }
+        else
+        {
+            audioSource.clip = audioClips[currSound];
+            audioSource.Play();
+        }
     }
 }

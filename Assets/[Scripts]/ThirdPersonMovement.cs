@@ -9,9 +9,8 @@ public class ThirdPersonMovement : MonoBehaviour
     Vector3 moveVector;
     static public CharacterController controller;
     public Transform cam;
-    public AudioSource burn;
-    public AudioSource crash;
-    public AudioSource jumping;
+    public AudioSource audioSource;
+    public AudioClip[] audioClips;
 
     [SerializeField]
     static public float speed = 6f;
@@ -94,7 +93,8 @@ public class ThirdPersonMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -1.8f * gravityValue);
-            jumping.Play();
+            audioSource.clip = audioClips[4];
+            audioSource.Play();
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
@@ -113,13 +113,15 @@ public class ThirdPersonMovement : MonoBehaviour
         if ((other.gameObject.tag == "Roomba"))
         {
             this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
-            crash.Play();
+            audioSource.clip = audioClips[1];
+            audioSource.Play();
         }
 
         if ((other.gameObject.tag == "StoveBurner"))
         {
             this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
-            burn.Play();
+            audioSource.clip = audioClips[2];
+            audioSource.Play();
         }
     }
     
