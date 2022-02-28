@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class UIButtonManager : MonoBehaviour
 {
 
+    public GameObject keybindsMenu;
+    public GameObject optionsMenu;
+
     public GameObject pauseMenu;
     private bool isPaused = false;
     //public AudioSource audioSource;
@@ -13,6 +16,9 @@ public class UIButtonManager : MonoBehaviour
 
     private void Start()
     {
+        if (keybindsMenu != null)
+            keybindsMenu.SetActive(false);
+
 
         //audioSource = gameObject.GetComponent<AudioSource>();
 
@@ -40,6 +46,15 @@ public class UIButtonManager : MonoBehaviour
         }
     }
 
+
+    public void ToggleKeybindsMenu()
+    {
+        if (keybindsMenu == null)
+            return;
+
+        keybindsMenu.SetActive(!keybindsMenu.activeSelf);
+        optionsMenu.SetActive(!optionsMenu.activeSelf);
+    }
 
     public void OnNewGameButtonPressed()
     {
@@ -75,13 +90,13 @@ public class UIButtonManager : MonoBehaviour
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
 
-        if (Input.GetKeyDown("Escape") && isPaused == false)
+        if (Input.GetKeyDown("escape") && isPaused == false)
         {
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
         }
 
-        else if (Input.GetKeyDown("Escape") && isPaused == true)
+        else if (Input.GetKeyDown("escape") && isPaused == true)
         {
             Time.timeScale = 1;
             pauseMenu.SetActive(false);

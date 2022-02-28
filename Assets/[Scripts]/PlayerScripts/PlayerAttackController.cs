@@ -28,7 +28,7 @@ public class PlayerAttackController : MonoBehaviour
             numOfClicks = 0;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(PlayerKeybinds.PlayerPunch))
         {
             prevClickTime = Time.time;
             numOfClicks++;

@@ -55,7 +55,7 @@ public class CarmellaAnimationManager : MonoBehaviour
         bool backPressed = Input.GetKey("s");
         bool rightPressed = Input.GetKey("d");
         bool leftPressed = Input.GetKey("a");
-        bool jumpPressed = Input.GetKey("space");
+        bool jumpPressed = Input.GetKey(PlayerKeybinds.PlayerJump);
         
         //bool runningPunch 
 
@@ -113,7 +113,7 @@ public class CarmellaAnimationManager : MonoBehaviour
         //------------------------------------------------------------------ Melee Combat Moves --------------------------------------------------
 
         //Running Punch
-        if (((forwardPressed || backPressed || rightPressed || leftPressed)) && Input.GetButton("Fire1"))
+        if (((forwardPressed || backPressed || rightPressed || leftPressed)) && Input.GetKeyDown(PlayerKeybinds.PlayerPunch))
         {
             animator.SetBool("isRunPunch", true);
         }
@@ -121,7 +121,7 @@ public class CarmellaAnimationManager : MonoBehaviour
             animator.SetBool("isRunPunch", false);
 
         //Running Kick
-        if (((forwardPressed || backPressed || rightPressed || leftPressed)) && Input.GetButton("Fire2"))
+        if (((forwardPressed || backPressed || rightPressed || leftPressed)) && Input.GetKeyDown(PlayerKeybinds.PlayerKick))
         {
             animator.SetBool("isRunKick", true);
         }
