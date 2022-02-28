@@ -19,12 +19,12 @@ public class GameOverPickup : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Debug.Log("yeet");
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
