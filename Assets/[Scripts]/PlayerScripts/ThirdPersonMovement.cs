@@ -32,6 +32,8 @@ public class ThirdPersonMovement : MonoBehaviour
     [SerializeField] private UI_Inventory uiInventory;
     private Inventory inventory;
 
+    public IEnumerator deathCoroutine;
+
     void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -116,7 +118,7 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             audioSource.clip = audioClips[1];
             audioSource.Play();
-            StartCoroutine(TakeDamage());
+            StartTakeDamage();
         }
 
         if ((other.gameObject.tag == "StoveBurner"))
@@ -124,7 +126,12 @@ public class ThirdPersonMovement : MonoBehaviour
             
             audioSource.clip = audioClips[2];
             audioSource.Play();
-            StartCoroutine(TakeDamage());
+            StartTakeDamage();
+        }
+
+        if ((other.gameObject.layer == LayerMask.NameToLayer("Hazard")))
+        {
+            StartTakeDamage();
         }
     }
     
@@ -150,14 +157,26 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
+    public void StartTakeDamage()
+    {
+        if (deathCoroutine != null)
+            return;
+
+        deathCoroutine = TakeDamage();
+        StartCoroutine(deathCoroutine);
+    }
+
     public IEnumerator TakeDamage()
     {
-        //yield return new WaitForSeconds(1.6f); //time for other object animation
         animator.SetBool("isDamaged", true);
-        yield return new WaitForSeconds(1.0f); //animation duration should match this timing
+        yield return new WaitForSeconds(0.5f); //animation duration should match this timing
         animator.SetBool("isDamaged", false);
-        this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
 
+        GetComponent<CharacterController>().enabled = false;
+        this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
+        GetComponent<CharacterController>().enabled = true;
+
+        deathCoroutine = null;
     }
 
 }

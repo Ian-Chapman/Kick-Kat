@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 802359702520737881}
   - component: {fileID: 5361841012100360874}
   - component: {fileID: 1985527104851262897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Burners
   m_TagString: StoveBurner
   m_Icon: {fileID: 0}

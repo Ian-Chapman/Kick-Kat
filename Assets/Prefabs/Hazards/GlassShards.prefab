@@ -7063,7 +7063,7 @@ GameObject:
   - component: {fileID: 897878744103770909}
   - component: {fileID: 897878744103770908}
   - component: {fileID: 897878744103770911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GlassShards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7122,6 +7122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hazardParticleSystems:
   - {fileID: 897878744054978034}
+  player: {fileID: 0}
 --- !u!1 &897878744245840165
 GameObject:
   m_ObjectHideFlags: 0
