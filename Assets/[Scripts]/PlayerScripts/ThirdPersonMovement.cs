@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 
 [RequireComponent(typeof (CharacterController))]
@@ -33,6 +35,10 @@ public class ThirdPersonMovement : MonoBehaviour
     private Inventory inventory;
 
     public IEnumerator deathCoroutine;
+
+    public int lives = 9;
+
+    public TextMeshProUGUI livesText;
 
     void Start()
     {
@@ -83,6 +89,11 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         jump();
+
+        if(lives <= 0)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 
     public void jump()
@@ -164,6 +175,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
         deathCoroutine = TakeDamage();
         StartCoroutine(deathCoroutine);
+        lives--;
+        livesText.text = "x" + lives.ToString();
     }
 
     public IEnumerator TakeDamage()
