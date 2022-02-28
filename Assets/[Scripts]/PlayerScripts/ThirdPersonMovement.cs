@@ -121,6 +121,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if ((other.gameObject.tag == "StoveBurner"))
         {
+            
             audioSource.clip = audioClips[2];
             audioSource.Play();
             StartCoroutine(TakeDamage());
@@ -149,17 +150,14 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-
     public IEnumerator TakeDamage()
     {
-
-        animator.SetBool("isDamaged", true);        
-        yield return new WaitForSeconds(.6f);
+        //yield return new WaitForSeconds(1.6f); //time for other object animation
+        animator.SetBool("isDamaged", true);
+        yield return new WaitForSeconds(1.0f); //animation duration should match this timing
         animator.SetBool("isDamaged", false);
-        yield return new WaitForSeconds(.2f);
-        this.transform.position = new Vector3(20.3f, 1.7f, -15.456f);
-        //add life reduction here
-    }
+        this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
 
+    }
 
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class HazardScript : MonoBehaviour
 {
-
-
     [SerializeField]
     private List<ParticleSystem> hazardParticleSystems;
 
