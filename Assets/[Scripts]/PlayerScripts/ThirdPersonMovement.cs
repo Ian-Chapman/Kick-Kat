@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof (CharacterController))]
 public class ThirdPersonMovement : MonoBehaviour
 {
+    public Animator animator;
+
     Vector3 moveVector;
     static public CharacterController controller;
     public Transform cam;
@@ -112,16 +114,16 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if ((other.gameObject.tag == "Roomba"))
         {
-            this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
             audioSource.clip = audioClips[1];
             audioSource.Play();
+            StartCoroutine(TakeDamage());
         }
 
         if ((other.gameObject.tag == "StoveBurner"))
         {
-            this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
             audioSource.clip = audioClips[2];
             audioSource.Play();
+            StartCoroutine(TakeDamage());
         }
     }
     
@@ -146,4 +148,18 @@ public class ThirdPersonMovement : MonoBehaviour
                 break;
         }
     }
+
+
+    public IEnumerator TakeDamage()
+    {
+
+        animator.SetBool("isDamaged", true);        
+        yield return new WaitForSeconds(.6f);
+        animator.SetBool("isDamaged", false);
+        yield return new WaitForSeconds(.2f);
+        this.transform.position = new Vector3(20.3f, 1.7f, -15.456f);
+        //add life reduction here
+    }
+
+
 }

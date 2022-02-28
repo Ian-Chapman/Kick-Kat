@@ -15,16 +15,6 @@ public class CarmellaAnimationManager : MonoBehaviour
     private Vector3 m_vPrevVel;
     private Vector3 m_vDirection;
 
-    //bool isRunPunch = false;
-    //bool isKick1 = false;
-    //bool isKick2 = false;
-    //bool isKick3 = false;
-    //bool isFinishingKick = false;
-
-
-
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +27,6 @@ public class CarmellaAnimationManager : MonoBehaviour
 
     void Update()
     {
-
         float velocity = Mathf.Abs(body.velocity.x);
         m_vPrevVel = body.velocity;
     }

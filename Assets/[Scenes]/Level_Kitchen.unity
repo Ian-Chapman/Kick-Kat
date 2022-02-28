@@ -18358,6 +18358,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 617022171, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1707439601}
+    - target: {fileID: 617022171, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1707439605}
@@ -18423,7 +18427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180884905, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
+<<<<<<< Updated upstream
       value: 1.777592
+=======
+      value: 1.777193
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1201760098, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18503,7 +18511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1257495945, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
+<<<<<<< Updated upstream
       value: 1.777592
+=======
+      value: 1.777193
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 2003139209, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18535,7 +18547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2003139210, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
+<<<<<<< Updated upstream
       value: 1.777592
+=======
+      value: 1.777193
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1000643133401688, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Layer
@@ -46611,12 +46627,12 @@ GameObject:
   - component: {fileID: 2874828185269144561}
   - component: {fileID: 2874828185269144560}
   m_Layer: 0
-  m_Name: RoombaModel
+  m_Name: Roomba
   m_TagString: Roomba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2690315846637854561
 GameObject:
   m_ObjectHideFlags: 0
