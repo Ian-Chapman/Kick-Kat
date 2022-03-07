@@ -98,7 +98,7 @@ public class CarmellaAnimationManager : MonoBehaviour
 
 
         //Changes the height position of the player..
-        if (jumpPressed && ThirdPersonMovement.groundedPlayer)
+        if (jumpPressed && ThirdPersonMovement.groundedPlayer && ThirdPersonMovement.speed >= 0)
         {
             //ThirdPersonMovement.playerVelocity.y += Mathf.Sqrt(ThirdPersonMovement.jumpHeight * -3.0f * ThirdPersonMovement.gravityValue);
             thirdPersonMovement.jump();
@@ -107,8 +107,34 @@ public class CarmellaAnimationManager : MonoBehaviour
         else
             animator.SetBool("isJumpingForward", false);
 
+        //Jumping in place
+        if (jumpPressed && ThirdPersonMovement.groundedPlayer)
+        {
+            thirdPersonMovement.jump();
+            animator.SetBool("isJumping", true);
+        }
+        else
+            animator.SetBool("isJumping", false);
+
+        //Falling
+        if(!ThirdPersonMovement.groundedPlayer)
+        {
+            animator.SetBool("isFalling", true);
+        }
+        else
+            animator.SetBool("isFalling", false);
+
+
+
+
         ThirdPersonMovement.playerVelocity.y += ThirdPersonMovement.gravityValue * Time.deltaTime;
         ThirdPersonMovement.controller.Move(ThirdPersonMovement.playerVelocity * Time.deltaTime);
+
+
+
+
+
+
 
         //------------------------------------------------------------------ Melee Combat Moves --------------------------------------------------
 
