@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1423401000}
   m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: f421449261fb9bf4c8879069a4f250a7,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -17607,8 +17608,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883d55cafbad5994188baba3f76eceba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keybindsMenu: {fileID: 0}
+  optionsMenu: {fileID: 0}
   pauseMenu: {fileID: 0}
-  audioSource: {fileID: 1503141462}
 --- !u!1001 &1135727314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18678,6 +18680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4b40b60184f834780b5f2daeaac5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 0}
   bounceHeight: 20
 --- !u!65 &1181163536
 BoxCollider:
@@ -22794,12 +22797,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1492682154}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1503141462 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8039334494552771698, guid: 36090ad9de871c142a60980f56ca5b2e,
-    type: 3}
-  m_PrefabInstance: {fileID: 645123975}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1504557364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23270,6 +23267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4b40b60184f834780b5f2daeaac5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 0}
   bounceHeight: 20
 --- !u!65 &1543699093
 BoxCollider:
