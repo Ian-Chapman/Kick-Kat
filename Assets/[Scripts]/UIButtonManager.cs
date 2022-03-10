@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class UIButtonManager : MonoBehaviour
 {
+    public AudioSource audioSource;
+
     [Header("Option Panels")]
     public GameObject allOptionsMenu;
     public GameObject resolutionPanel;
@@ -17,6 +19,12 @@ public class UIButtonManager : MonoBehaviour
     public GameObject backFromAudioPanelButton;
     public GameObject backFromKeybindsPanelButton;
 
+    [Header("Hidden UI on Pause")]
+    public GameObject miniMap;
+    public GameObject lifeCounter;
+    public GameObject pawsButton; //pause button
+    public GameObject inventory;
+    //add screen mounted controls here later.
 
 
     public GameObject pauseMenu;
@@ -46,6 +54,11 @@ public class UIButtonManager : MonoBehaviour
         backFromResolutionPanel.SetActive(false);
         backFromAudioPanelButton.SetActive(false);
         backFromKeybindsPanelButton.SetActive(false);
+
+        miniMap.SetActive(true);
+        lifeCounter.SetActive(true);
+        pawsButton.SetActive(true);
+        inventory.SetActive(true);
     }
 
     private void Update()
@@ -108,24 +121,38 @@ public class UIButtonManager : MonoBehaviour
     {
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
+        audioSource.Pause();
 
-        if (Input.GetKeyDown("escape") && isPaused == false)
-        {
-            Time.timeScale = 0;
-            pauseMenu.SetActive(true);
-        }
+        //if (Input.GetKeyDown("escape") && isPaused == false)
+        //{
+        //    Time.timeScale = 0;
+        //    pauseMenu.SetActive(true);
+        //}
 
-        else if (Input.GetKeyDown("escape") && isPaused == true)
-        {
-            Time.timeScale = 1;
-            pauseMenu.SetActive(false);
-        }
+        //else if (Input.GetKeyDown("escape") && isPaused == true)
+        //{
+        //    Time.timeScale = 1;
+        //    pauseMenu.SetActive(false);
+        //}
+
+        
+
+        miniMap.SetActive(false);
+        lifeCounter.SetActive(false);
+        pawsButton.SetActive(false);
+        inventory.SetActive(false);
     }
 
     public void OnResumeButtonPressed()
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
+        audioSource.Play();
+
+        miniMap.SetActive(true);
+        lifeCounter.SetActive(true);
+        pawsButton.SetActive(true);
+        inventory.SetActive(true);
     }
 
     public void OnSaveButtonPressed()

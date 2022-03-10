@@ -5811,18 +5811,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301337848}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 880250640}
   m_Father: {fileID: 1819368152}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -194, y: 268}
+  m_AnchoredPosition: {x: -258, y: 265}
   m_SizeDelta: {x: 168.4039, y: 48.879}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301337850
@@ -5894,7 +5894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.22745098}
+  m_Color: {r: 0.8117647, g: 0.05882353, b: 0.6313726, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7615,7 +7615,7 @@ RectTransform:
   m_Children:
   - {fileID: 781247829}
   m_Father: {fileID: 1819368152}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8534,7 +8534,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 479362782}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 479362783}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea5a6140db834ca428f5e2928825e91e, type: 3}
@@ -8640,7 +8640,7 @@ PrefabInstance:
     - target: {fileID: 8419842902553940011, guid: d26567ee678812449b24ff4d1a702b52,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 326
+      value: 369
       objectReference: {fileID: 0}
     - target: {fileID: 8419842902553940011, guid: d26567ee678812449b24ff4d1a702b52,
         type: 3}
@@ -8659,6 +8659,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26567ee678812449b24ff4d1a702b52, type: 3}
+--- !u!1 &479362783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8419842902553940010, guid: d26567ee678812449b24ff4d1a702b52,
+    type: 3}
+  m_PrefabInstance: {fileID: 479362782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494895342
 GameObject:
   m_ObjectHideFlags: 0
@@ -14859,7 +14865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 24, y: -24}
+  m_AnchoredPosition: {x: 130, y: -24}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &786303591
@@ -16771,7 +16777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Paws Menu
+  m_text: Paws
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 13c79c88f0e0a364f8279cb1b7be1896, type: 2}
   m_sharedMaterial: {fileID: 3058143067939080669, guid: 13c79c88f0e0a364f8279cb1b7be1896,
@@ -27342,7 +27348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -194, y: -118}
+  m_AnchoredPosition: {x: -258, y: -118}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274551516
@@ -37804,8 +37810,8 @@ RectTransform:
   - {fileID: 786303590}
   - {fileID: 1274551515}
   - {fileID: 473404457}
-  - {fileID: 438894759}
   - {fileID: 301337849}
+  - {fileID: 438894759}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37826,6 +37832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883d55cafbad5994188baba3f76eceba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 946754715}
   allOptionsMenu: {fileID: 0}
   resolutionPanel: {fileID: 0}
   audioPanel: {fileID: 0}
@@ -37834,6 +37841,10 @@ MonoBehaviour:
   backFromResolutionPanel: {fileID: 0}
   backFromAudioPanelButton: {fileID: 0}
   backFromKeybindsPanelButton: {fileID: 0}
+  miniMap: {fileID: 786303589}
+  lifeCounter: {fileID: 1274551514}
+  pawsButton: {fileID: 301337848}
+  inventory: {fileID: 479362783}
   pauseMenu: {fileID: 438894758}
 --- !u!1001 &1824501914
 PrefabInstance:
@@ -41806,10 +41817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff550cdc7bdb914b879cb1849d09a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ratAnimator: {fileID: 438725619}
-  distanceToPlayer: 0
-  rat: {fileID: 0}
-  player: {fileID: 1707439584}
 --- !u!43 &2099720731
 Mesh:
   m_ObjectHideFlags: 0
