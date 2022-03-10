@@ -105,7 +105,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         // Changes the height position of the player..
-        if (Input.GetKeyDown(PlayerKeybinds.PlayerJump) && groundedPlayer)
+        if (Input.GetKey(PlayerKeybinds.PlayerJump) && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -1.8f * gravityValue);
             audioSource.clip = audioClips[4];

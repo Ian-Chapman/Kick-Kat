@@ -19,7 +19,7 @@ public class BouncyPlatforms : MonoBehaviour
             // Bounce using the ThirdPersonMovement and Character Controller
             if (ThirdPersonMovement.playerVelocity.y < 0.0f)
             {
-                playerAnimator.SetBool("isFalling", true); // play falling animation
+                playerAnimator.SetBool("isJumping", true);
                 ThirdPersonMovement.playerVelocity.y += bounceHeight;
                 this.GetComponent<AudioSource>().Play();
             }

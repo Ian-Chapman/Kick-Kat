@@ -48,7 +48,7 @@ public class CarmellaAnimationManager : MonoBehaviour
         bool isIdle = animator.GetBool("isIdle");
         bool isJumpingForward = animator.GetBool("isJumpingForward");
         bool isRunning = animator.GetBool("isRunning");
-        //bool isJumping = animator.GetBool("isJumping");
+        bool isJumping = animator.GetBool("isJumping");
         bool isFalling = animator.GetBool("isFalling");
 
         bool forwardPressed = Input.GetKey("w");
@@ -107,33 +107,22 @@ public class CarmellaAnimationManager : MonoBehaviour
         else
             animator.SetBool("isJumpingForward", false);
 
+
+
         //Jumping in place
-        if (jumpPressed && ThirdPersonMovement.groundedPlayer)
+        if (jumpPressed && ThirdPersonMovement.groundedPlayer && !isRunning)
         {
             thirdPersonMovement.jump();
             animator.SetBool("isJumping", true);
         }
-        else
+        else if (!jumpPressed && !ThirdPersonMovement.groundedPlayer)
             animator.SetBool("isJumping", false);
-
-        //Falling
-        if(!ThirdPersonMovement.groundedPlayer)
-        {
-            animator.SetBool("isFalling", true);
-        }
-        else
-            animator.SetBool("isFalling", false);
 
 
 
 
         ThirdPersonMovement.playerVelocity.y += ThirdPersonMovement.gravityValue * Time.deltaTime;
         ThirdPersonMovement.controller.Move(ThirdPersonMovement.playerVelocity * Time.deltaTime);
-
-
-
-
-
 
 
         //------------------------------------------------------------------ Melee Combat Moves --------------------------------------------------
