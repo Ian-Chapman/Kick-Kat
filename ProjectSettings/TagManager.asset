@@ -14,6 +14,7 @@ TagManager:
   - Glass
   - Platform
   - KitchenTableA
+  - RatA
   layers:
   - Default
   - TransparentFX

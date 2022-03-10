@@ -7452,6 +7452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glass_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 192774, guid: 3ce1d99fa4d60fa4595fd475e527db21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 409284, guid: 3ce1d99fa4d60fa4595fd475e527db21, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -7571,12 +7575,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ratAnimator: {fileID: 438725619}
+  player: {fileID: 1707439584}
   patrolPoints:
   - {fileID: 234293121}
   - {fileID: 975192950}
   - {fileID: 1324896251}
   - {fileID: 2136464688}
-  speed: 1
+  distanceToPlayer: 0
 --- !u!1 &438894758
 GameObject:
   m_ObjectHideFlags: 0
@@ -12040,6 +12045,11 @@ PrefabInstance:
     - target: {fileID: 5600892759164636097, guid: 35dc2d2a9984326449596351d5379a42,
         type: 3}
       propertyPath: m_Name
+      value: RatA
+      objectReference: {fileID: 0}
+    - target: {fileID: 5600892759164636097, guid: 35dc2d2a9984326449596351d5379a42,
+        type: 3}
+      propertyPath: m_TagString
       value: RatA
       objectReference: {fileID: 0}
     - target: {fileID: 5600892759165065121, guid: 35dc2d2a9984326449596351d5379a42,
@@ -16634,6 +16644,10 @@ PrefabInstance:
     - target: {fileID: 154378, guid: b38a2dffc833b334dbff37a48403e331, type: 3}
       propertyPath: m_Name
       value: China_Plate_B_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 154378, guid: b38a2dffc833b334dbff37a48403e331, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 441026, guid: b38a2dffc833b334dbff37a48403e331, type: 3}
       propertyPath: m_RootOrder
@@ -27511,6 +27525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glass_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 192774, guid: 3ce1d99fa4d60fa4595fd475e527db21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 409284, guid: 3ce1d99fa4d60fa4595fd475e527db21, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -27652,6 +27670,10 @@ PrefabInstance:
     - target: {fileID: 184966, guid: 59919e68982c40e41a16beb160928b17, type: 3}
       propertyPath: m_Name
       value: Salt_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 184966, guid: 59919e68982c40e41a16beb160928b17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 435282, guid: 59919e68982c40e41a16beb160928b17, type: 3}
       propertyPath: m_RootOrder
@@ -34875,6 +34897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: China_Bowl_B_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 120794, guid: a6a6e134b91d2ea4c948634ecd512fa5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 494076, guid: a6a6e134b91d2ea4c948634ecd512fa5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -41764,10 +41790,26 @@ BoxCollider:
   m_GameObject: {fileID: 1168347118}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 4.5, y: 0.32712972, z: 3.1}
   m_Center: {x: 0, y: 1.7406826, z: 0}
+--- !u!114 &2097458091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168347118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff550cdc7bdb914b879cb1849d09a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ratAnimator: {fileID: 438725619}
+  distanceToPlayer: 0
+  rat: {fileID: 0}
+  player: {fileID: 1707439584}
 --- !u!43 &2099720731
 Mesh:
   m_ObjectHideFlags: 0
