@@ -884,6 +884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 48825234}
+  target: {fileID: 1010992054}
 --- !u!1 &52808504
 GameObject:
   m_ObjectHideFlags: 0
