@@ -5,9 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class UIButtonManager : MonoBehaviour
 {
+    [Header("Option Panels")]
+    public GameObject allOptionsMenu;
+    public GameObject resolutionPanel;
+    public GameObject audioPanel;
+    public GameObject keybindsPanel;
 
-    public GameObject keybindsMenu;
-    public GameObject optionsMenu;
+    [Header ("Back Buttons")]
+    public GameObject backToMainMenuButton;
+    public GameObject backFromResolutionPanel;
+    public GameObject backFromAudioPanelButton;
+    public GameObject backFromKeybindsPanelButton;
+
+
 
     public GameObject pauseMenu;
     private bool isPaused = false;
@@ -16,8 +26,8 @@ public class UIButtonManager : MonoBehaviour
 
     private void Start()
     {
-        if (keybindsMenu != null)
-            keybindsMenu.SetActive(false);
+        if (keybindsPanel != null)
+            keybindsPanel.SetActive(false);
 
 
         //audioSource = gameObject.GetComponent<AudioSource>();
@@ -27,6 +37,15 @@ public class UIButtonManager : MonoBehaviour
             pauseMenu.SetActive(false); 
         }
 
+        allOptionsMenu.SetActive(true);
+        backToMainMenuButton.SetActive(true);
+
+        resolutionPanel.SetActive(false);
+        audioPanel.SetActive(false);
+        keybindsPanel.SetActive(false);
+        backFromResolutionPanel.SetActive(false);
+        backFromAudioPanelButton.SetActive(false);
+        backFromKeybindsPanelButton.SetActive(false);
     }
 
     private void Update()
@@ -49,11 +68,11 @@ public class UIButtonManager : MonoBehaviour
 
     public void ToggleKeybindsMenu()
     {
-        if (keybindsMenu == null)
+        if (keybindsPanel == null)
             return;
 
-        keybindsMenu.SetActive(!keybindsMenu.activeSelf);
-        optionsMenu.SetActive(!optionsMenu.activeSelf);
+        keybindsPanel.SetActive(!keybindsPanel.activeSelf);
+        allOptionsMenu.SetActive(!allOptionsMenu.activeSelf);
     }
 
     public void OnNewGameButtonPressed()
@@ -125,6 +144,79 @@ public class UIButtonManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
+
+
+    //Delay for button sound
+    //private IEnumerator DelayForUIButtonSound(float delay)
+    //{
+    //    yield return new WaitForSeconds(delay);
+
+    //}
+
+    //=========================================================================== OPTION MENU BUTTONS =====================================================================
+
+    public void OnResolutionButtonPressed()
+    {
+        allOptionsMenu.SetActive(false);
+        backToMainMenuButton.SetActive(false);
+
+        resolutionPanel.SetActive(true);
+        backFromResolutionPanel.SetActive(true);
+
+    }
+
+    public void OnAudioButtonPressed()
+    {
+        allOptionsMenu.SetActive(false);
+        backToMainMenuButton.SetActive(false);
+
+
+        audioPanel.SetActive(true);
+        backFromAudioPanelButton.SetActive(true);
+
+    }
+
+    public void OnKeybindingsButtonPressed()
+    {
+        allOptionsMenu.SetActive(false);
+        backToMainMenuButton.SetActive(false);
+
+        keybindsPanel.SetActive(true);
+        backFromKeybindsPanelButton.SetActive(true);
+    }
+
+
+
+    //========================================================================= OPTIONS MENU BACK BUTTONS ==================================================================
+
+    public void OnKeybindsBackButtonPressed() 
+    {
+        allOptionsMenu.SetActive(true);
+        backToMainMenuButton.SetActive(true);
+
+        keybindsPanel.SetActive(false);
+        backFromKeybindsPanelButton.SetActive(false);
+    }
+
+    public void OnAudioBackButtonPressed()
+    {
+        allOptionsMenu.SetActive(true);
+        backToMainMenuButton.SetActive(true);
+
+        audioPanel.SetActive(false);;
+        backFromAudioPanelButton.SetActive(false);
+    }
+
+    public void OnResolutionBackButtonPressed()
+    {
+        allOptionsMenu.SetActive(true);
+        backToMainMenuButton.SetActive(true);
+
+        resolutionPanel.SetActive(false);
+        backFromResolutionPanel.SetActive(false);
+    }
+        
+
 
 
 }
