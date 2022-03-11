@@ -5,6 +5,7 @@ using UnityEngine;
 public class CarmellaAnimationManager : MonoBehaviour
 {
     ThirdPersonMovement thirdPersonMovement;
+    public Joystick movementJoystick;
 
     static public Rigidbody body;
     static Animator animator;
@@ -56,6 +57,12 @@ public class CarmellaAnimationManager : MonoBehaviour
         bool rightPressed = Input.GetKey("d");
         bool leftPressed = Input.GetKey("a");
         bool jumpPressed = Input.GetKey(PlayerKeybinds.PlayerJump);
+
+        // Joystick input
+        forwardPressed |= movementJoystick.Vertical > 0.1f;
+        backPressed |= movementJoystick.Vertical < -0.1f;
+        rightPressed |= movementJoystick.Horizontal > 0.1f;
+        leftPressed |= movementJoystick.Horizontal < -0.1f;
         
         //bool runningPunch 
 
@@ -143,6 +150,13 @@ public class CarmellaAnimationManager : MonoBehaviour
         else
             animator.SetBool("isRunKick", false);
 
+    }
+
+    /// UI Button Functions ///
+
+    public void OnJumpButton_Pressed()
+    {
+        animator.SetBool("isJumping", true);
     }
 }
 

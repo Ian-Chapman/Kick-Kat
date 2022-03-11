@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class ThirdPersonMovement : MonoBehaviour
 {
     public Animator animator;
+    public Joystick movementJoystick;
 
     Vector3 moveVector;
     static public CharacterController controller;
@@ -61,9 +62,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
         moveVector = Vector3.zero;
 
-       
-        float horizonal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        float horizonal = Input.GetAxisRaw("Horizontal") + movementJoystick.Horizontal;
+        float vertical = Input.GetAxisRaw("Vertical") + movementJoystick.Vertical;
+
         Vector3 direction = new Vector3(horizonal, 0f, vertical).normalized; //normalized prevents double key inputs from making player move faster
 
         if (direction.magnitude >= 0.1f)
@@ -73,6 +74,7 @@ public class ThirdPersonMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
@@ -192,4 +194,17 @@ public class ThirdPersonMovement : MonoBehaviour
         deathCoroutine = null;
     }
 
+    /// UI Button Functions ///
+
+    public void OnJumpButton_Pressed()
+    {
+        groundedPlayer = controller.isGrounded;
+
+        if (groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -1.8f * gravityValue);
+            audioSource.clip = audioClips[4];
+            audioSource.Play();
+        }
+    }
 }

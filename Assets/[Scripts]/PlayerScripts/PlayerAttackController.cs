@@ -110,4 +110,22 @@ public class PlayerAttackController : MonoBehaviour
             audioSource.Play();
         }
     }
+
+    /// UI Button Functions ///
+
+    public void OnAttackButton_Pressed()
+    {
+        prevClickTime = Time.time;
+        numOfClicks++;
+
+        if (numOfClicks == 1)
+        {
+            animator.SetBool("isKick1", true);
+            PlayAttack();
+        }
+
+        //Max possible attacks in combo is clamped at 4
+        numOfClicks = Mathf.Clamp(numOfClicks, 0, 4);
+    }
+
 }
