@@ -9,7 +9,16 @@ using UnityEngine.SceneManagement;
 public class ThirdPersonMovement : MonoBehaviour
 {
     public Animator animator;
-    public Joystick movementJoystick;
+    public Joystick rightHandJoystick;
+    public Joystick leftHandJoystick;
+
+    private Joystick CurrentJoystick
+    {
+        get
+        {
+            return (PlayerKeybinds.PlayerRightHanded ? rightHandJoystick : leftHandJoystick);
+        }
+    }
 
     Vector3 moveVector;
     static public CharacterController controller;
@@ -62,8 +71,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
         moveVector = Vector3.zero;
 
-        float horizonal = Input.GetAxisRaw("Horizontal") + movementJoystick.Horizontal;
-        float vertical = Input.GetAxisRaw("Vertical") + movementJoystick.Vertical;
+        float horizonal = Input.GetAxisRaw("Horizontal") + CurrentJoystick.Horizontal;
+        float vertical = Input.GetAxisRaw("Vertical") + CurrentJoystick.Vertical;
 
         Vector3 direction = new Vector3(horizonal, 0f, vertical).normalized; //normalized prevents double key inputs from making player move faster
 

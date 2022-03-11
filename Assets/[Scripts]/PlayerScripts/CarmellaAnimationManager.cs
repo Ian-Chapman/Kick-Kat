@@ -5,7 +5,16 @@ using UnityEngine;
 public class CarmellaAnimationManager : MonoBehaviour
 {
     ThirdPersonMovement thirdPersonMovement;
-    public Joystick movementJoystick;
+    public Joystick rightHandJoystick;
+    public Joystick leftHandJoystick;
+
+    private Joystick CurrentJoystick
+    {
+        get
+        {
+            return (PlayerKeybinds.PlayerRightHanded ? rightHandJoystick : leftHandJoystick);
+        }
+    }
 
     static public Rigidbody body;
     static Animator animator;
@@ -59,10 +68,10 @@ public class CarmellaAnimationManager : MonoBehaviour
         bool jumpPressed = Input.GetKey(PlayerKeybinds.PlayerJump);
 
         // Joystick input
-        forwardPressed |= movementJoystick.Vertical > 0.1f;
-        backPressed |= movementJoystick.Vertical < -0.1f;
-        rightPressed |= movementJoystick.Horizontal > 0.1f;
-        leftPressed |= movementJoystick.Horizontal < -0.1f;
+        forwardPressed |= CurrentJoystick.Vertical > 0.1f;
+        backPressed |= CurrentJoystick.Vertical < -0.1f;
+        rightPressed |= CurrentJoystick.Horizontal > 0.1f;
+        leftPressed |= CurrentJoystick.Horizontal < -0.1f;
         
         //bool runningPunch 
 

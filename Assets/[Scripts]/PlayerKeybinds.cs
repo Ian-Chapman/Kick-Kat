@@ -10,6 +10,8 @@ public class PlayerKeybinds : MonoBehaviour
     public static string PlayerPunch = "mouse 0";
     public static string PlayerKick = "mouse 1";
 
+    public static bool PlayerRightHanded = true;
+
     private void OnEnable()
     {
         Keybinds = new Dictionary<int, string>();
