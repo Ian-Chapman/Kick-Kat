@@ -28,6 +28,10 @@ public class PlayerAttackController : MonoBehaviour
             numOfClicks = 0;
         }
 
+        if (Application.platform == RuntimePlatform.Android ||
+            Application.platform == RuntimePlatform.IPhonePlayer)
+            return;
+
         if (Input.GetKeyDown(PlayerKeybinds.PlayerPunch))
         {
             prevClickTime = Time.time;
