@@ -87,6 +87,7 @@ public class CarmellaAnimationManager : MonoBehaviour
         {
             animator.SetBool("isIdle", true);
             animator.SetBool("isJumping", false);
+            animator.SetBool("isFalling", false);
             ThirdPersonMovement.speed = 0;
         }
 
@@ -130,26 +131,35 @@ public class CarmellaAnimationManager : MonoBehaviour
             thirdPersonMovement.jump();
             Debug.Log("Jumped");
             animator.SetBool("isJumping", true);
+            animator.SetBool("isFalling", false);
         }
 
-        //if (!ThirdPersonMovement.groundedPlayer)
-        //{
-        //    animator.SetBool("isJumping", true);
-        //    animator.SetBool("isRunning", true);
-        //}
+        if (!ThirdPersonMovement.groundedPlayer)
+        {
+            //animator.SetBool("isJumping", false);
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isFalling", true);
+            animator.SetBool("isIdle", false);
+
+        }
+
+        if (jumpPressed && !ThirdPersonMovement.groundedPlayer)
+        {
+            animator.SetBool("isFalling", true);
+        }
 
 
 
-        //Jumping in place
-        //if (jumpPressed && ThirdPersonMovement.groundedPlayer && !isRunning)
-        //{
-        //    thirdPersonMovement.jump();
-        //    animator.SetBool("isJumping", true);
-        //}
-        //else if (!jumpPressed && !ThirdPersonMovement.groundedPlayer)
-        //    animator.SetBool("isJumping", false);
+                //Jumping in place
+                //if (jumpPressed && ThirdPersonMovement.groundedPlayer && !isRunning)
+                //{
+                //    thirdPersonMovement.jump();
+                //    animator.SetBool("isJumping", true);
+                //}
+                //else if (!jumpPressed && !ThirdPersonMovement.groundedPlayer)
+                //    animator.SetBool("isJumping", false);
 
-        ThirdPersonMovement.playerVelocity.y += ThirdPersonMovement.gravityValue * Time.deltaTime;
+                ThirdPersonMovement.playerVelocity.y += ThirdPersonMovement.gravityValue * Time.deltaTime;
         ThirdPersonMovement.controller.Move(ThirdPersonMovement.playerVelocity * Time.deltaTime);
 
 
