@@ -100,9 +100,10 @@ public class ThirdPersonMovement : MonoBehaviour
             UseItem(new Item { itemType = Item.ItemType.tempPup, amount = 1 });
         }
 
-        jump();
+        playerVelocity.y += gravityValue * Time.fixedDeltaTime;
+        controller.Move(playerVelocity * Time.fixedDeltaTime);
 
-        if(lives <= 0)
+        if (lives <= 0)
         {
             SceneManager.LoadScene(3);
         }
@@ -113,15 +114,12 @@ public class ThirdPersonMovement : MonoBehaviour
         groundedPlayer = controller.isGrounded;
 
         // Changes the height position of the player..
-        if (Input.GetKeyDown(PlayerKeybinds.PlayerJump) && groundedPlayer)
+        if (groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -1.8f * gravityValue);
             audioSource.clip = audioClips[4];
             audioSource.Play();
         }
-
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
