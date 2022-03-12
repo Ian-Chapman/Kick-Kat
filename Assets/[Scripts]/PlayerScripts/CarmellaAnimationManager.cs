@@ -45,11 +45,13 @@ public class CarmellaAnimationManager : MonoBehaviour
         //isWalkingHash = Animator.StringToHash("isWalking");
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
-        float velocity = Mathf.Abs(body.velocity.x);
-        m_vPrevVel = body.velocity;
+        //float velocity = Mathf.Abs(body.velocity.x);
+        //m_vPrevVel = body.velocity;
+
+        animInput();
     }
 
 
@@ -72,8 +74,10 @@ public class CarmellaAnimationManager : MonoBehaviour
         backPressed |= CurrentJoystick.Vertical < -0.1f;
         rightPressed |= CurrentJoystick.Horizontal > 0.1f;
         leftPressed |= CurrentJoystick.Horizontal < -0.1f;
-        
+
         //bool runningPunch 
+
+
 
 
         //------------------------------------------------------------------------ Ground Locomotion ------------------------------------------------------
@@ -82,7 +86,13 @@ public class CarmellaAnimationManager : MonoBehaviour
             !backPressed || !rightPressed || !leftPressed || !jumpPressed))
         {
             animator.SetBool("isIdle", true);
+            animator.SetBool("isJumping", false);
             ThirdPersonMovement.speed = 0;
+        }
+
+        if (isIdle)
+        {
+            ThirdPersonMovement.speed = 0; 
         }
 
         //Running
@@ -114,31 +124,36 @@ public class CarmellaAnimationManager : MonoBehaviour
 
 
         //Changes the height position of the player..
-        if (jumpPressed && ThirdPersonMovement.groundedPlayer && ThirdPersonMovement.speed >= 0)
+        if (jumpPressed && ThirdPersonMovement.groundedPlayer)
         {
             //ThirdPersonMovement.playerVelocity.y += Mathf.Sqrt(ThirdPersonMovement.jumpHeight * -3.0f * ThirdPersonMovement.gravityValue);
             thirdPersonMovement.jump();
-            animator.SetBool("isJumpingForward", true);
+            Debug.Log("Jumped");
+            animator.SetBool("isJumping", true);
         }
-        else
-            animator.SetBool("isJumpingForward", false);
+
+        //if (!ThirdPersonMovement.groundedPlayer)
+        //{
+        //    animator.SetBool("isJumping", true);
+        //    animator.SetBool("isRunning", true);
+        //}
 
 
 
         //Jumping in place
-        if (jumpPressed && ThirdPersonMovement.groundedPlayer && !isRunning)
-        {
-            thirdPersonMovement.jump();
-            animator.SetBool("isJumping", true);
-        }
-        else if (!jumpPressed && !ThirdPersonMovement.groundedPlayer)
-            animator.SetBool("isJumping", false);
-
-
-
+        //if (jumpPressed && ThirdPersonMovement.groundedPlayer && !isRunning)
+        //{
+        //    thirdPersonMovement.jump();
+        //    animator.SetBool("isJumping", true);
+        //}
+        //else if (!jumpPressed && !ThirdPersonMovement.groundedPlayer)
+        //    animator.SetBool("isJumping", false);
 
         ThirdPersonMovement.playerVelocity.y += ThirdPersonMovement.gravityValue * Time.deltaTime;
         ThirdPersonMovement.controller.Move(ThirdPersonMovement.playerVelocity * Time.deltaTime);
+
+
+
 
 
         //------------------------------------------------------------------ Melee Combat Moves --------------------------------------------------

@@ -65,9 +65,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        carmellaAnimationManager.animInput();
+        //carmellaAnimationManager.animInput();
 
         moveVector = Vector3.zero;
 
@@ -92,6 +92,7 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             moveVector += Physics.gravity;
         }
+        
         controller.Move(moveVector * Time.deltaTime);
 
         if (Input.GetKeyDown("x"))
@@ -110,13 +111,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public void jump()
     {
         groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
 
         // Changes the height position of the player..
-        if (Input.GetKey(PlayerKeybinds.PlayerJump) && groundedPlayer)
+        if (Input.GetKeyDown(PlayerKeybinds.PlayerJump) && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -1.8f * gravityValue);
             audioSource.clip = audioClips[4];
