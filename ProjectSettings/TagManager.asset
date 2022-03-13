@@ -14,8 +14,9 @@ TagManager:
   - Glass
   - Platform
   - KitchenTableA
+  - Rat
   - RatA
-  - RatB
+  - Sword
   layers:
   - Default
   - TransparentFX

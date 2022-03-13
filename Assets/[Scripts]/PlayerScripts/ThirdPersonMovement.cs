@@ -151,7 +151,21 @@ public class ThirdPersonMovement : MonoBehaviour
             StartTakeDamage();
         }
     }
-    
+
+    public void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Rat")
+        {
+            StartTakeDamage();
+        }
+
+        if (other.gameObject.tag == "Sword")
+        {
+            StartTakeDamage();
+        }
+    }
+
+
     public void UseItem(Item item)
     {
         
