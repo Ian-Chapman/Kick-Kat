@@ -50,6 +50,10 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public TextMeshProUGUI livesText;
 
+    public GameObject saveLoad;
+
+    private int newGameCheck;
+
     void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -61,6 +65,18 @@ public class ThirdPersonMovement : MonoBehaviour
         uiInventory.SetInventory(inventory);
 
         ItemWorld.SpawnItemWorld(new Vector3(-3, 2, 3), new Item { itemType = Item.ItemType.Points, amount = 1 });
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_Kitchen"))
+        {
+            if (PlayerPrefs.GetInt("NewGameCheck") == 0) // if the kitchen scene loads and it's not a new game (0 == false)
+            {
+                saveLoad.GetComponent<SaveLoad>().OnLoadButton_Pressed(); //we load the game
+                
+
+            }
+        }
+
+        livesText.text = "x" + lives.ToString();
     }
 
 

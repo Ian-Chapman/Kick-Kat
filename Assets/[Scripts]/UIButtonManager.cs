@@ -31,12 +31,15 @@ public class UIButtonManager : MonoBehaviour
     private bool isPaused = false;
     //public AudioSource audioSource;
 
+    private int newGameCheck;
+
+    public GameObject saveLoad;
 
     private void Start()
     {
         if (keybindsPanel != null)
             keybindsPanel.SetActive(false);
-
+        
 
         //audioSource = gameObject.GetComponent<AudioSource>();
 
@@ -59,6 +62,9 @@ public class UIButtonManager : MonoBehaviour
         lifeCounter.SetActive(true);
         pawsButton.SetActive(true);
         inventory.SetActive(true);
+
+
+
     }
 
     private void Update()
@@ -91,13 +97,17 @@ public class UIButtonManager : MonoBehaviour
     public void OnNewGameButtonPressed()
     {
         //audioSource.Stop();
+        newGameCheck = 1;
+        PlayerPrefs.SetInt("NewGameCheck", newGameCheck); // when we load the play scene we need to see if the game is new or loaded
         SceneManager.LoadScene("Level_Kitchen");
        //audioSource.Stop();
     }
 
     public void OnContinueButtonPressed()
     {
-        // for loading game
+        newGameCheck = 0;
+        PlayerPrefs.SetInt("NewGameCheck", newGameCheck); // when we load the play scene we need to see if the game is new or loaded
+        SceneManager.LoadScene("Level_Kitchen");
     }
 
     public void OnOptionsButtonPressed()
