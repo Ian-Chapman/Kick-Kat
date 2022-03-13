@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDetection : MonoBehaviour
+public class PlayerDetectionB : MonoBehaviour
 {
     public Transform player;
-    public Transform rat;
+    public Transform ratB;
     public Animator ratAnimator;
     RatBehaviour ratBehaviour;
 
@@ -22,14 +22,14 @@ public class PlayerDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ratBehaviour = GameObject.Find("Rat").GetComponent<RatBehaviour>();
-        ratAnimator = GameObject.Find("Rat").GetComponent<Animator>();
+        ratBehaviour = GameObject.Find("RatB").GetComponent<RatBehaviour>();
+        ratAnimator = GameObject.Find("RatB").GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        distanceToPlayer = Vector3.Distance(rat.transform.position, player.transform.position);
+        distanceToPlayer = Vector3.Distance(ratB.transform.position, player.transform.position);
     }
 
     private void OnTriggerEnter(Collider other)

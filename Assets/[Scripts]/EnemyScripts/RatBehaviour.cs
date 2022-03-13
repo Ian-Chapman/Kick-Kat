@@ -23,7 +23,7 @@ public class RatBehaviour : MonoBehaviour
         ratAnimator = GetComponent<Animator>();
 
         patrolPointIndex = 0; //First partol point in index
-        transform.LookAt(patrolPoints[patrolPointIndex].position);
+        //transform.LookAt(patrolPoints[patrolPointIndex].position);
     }
 
     // Update is called once per frame
@@ -35,12 +35,11 @@ public class RatBehaviour : MonoBehaviour
             IncreaseIndex();
         }
         Patrol();
-
-
     }
 
     public void Patrol()
     {
+        transform.LookAt(patrolPoints[patrolPointIndex].position);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
