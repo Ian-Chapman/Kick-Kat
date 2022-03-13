@@ -24,7 +24,7 @@ public class GameOverPickup : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("yeet");
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("WinScreen");
         }
     }
 }
