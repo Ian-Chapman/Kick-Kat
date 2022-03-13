@@ -12,16 +12,14 @@ public class RatBehaviour : MonoBehaviour
     private int patrolPointIndex;
     private float distToPatrolPoint;
 
-    public float distanceToPlayer;
+    
 
-    public static float speed = 1;
+    public float speed = 1;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-
         ratAnimator = GetComponent<Animator>();
 
         patrolPointIndex = 0; //First partol point in index
@@ -38,14 +36,10 @@ public class RatBehaviour : MonoBehaviour
         }
         Patrol();
 
-        if (distanceToPlayer <= 2)
-        {
-            transform.LookAt(player.position);
-            ratAnimator.SetBool("isPlayerInRange", true);
-        }
+
     }
 
-    void Patrol()
+    public void Patrol()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
@@ -66,28 +60,5 @@ public class RatBehaviour : MonoBehaviour
         transform.LookAt(player.position);
         transform.position += transform.forward * speed * Time.deltaTime;
     }
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-
-    //    if (other.gameObject.tag == "Player")
-    //    {
-
-    //        speed = 3;
-    //        ratAnimator.SetBool("isPlayerDetected", true);
-    //        patrolPoints.Clear();
-    //        //patrolPoints.Add(player);
-
-    //        MoveToPlayer();
-
-
-    //        if (distanceToPlayer <= 2)
-    //        {
-    //            transform.LookAt(player.position);
-    //            ratAnimator.SetBool("isPlayerInRange", true);
-    //        }
-
-    //    }
-    //}
 
 }
