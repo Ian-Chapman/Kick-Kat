@@ -95,10 +95,10 @@ public class ThirdPersonMovement : MonoBehaviour
         
         controller.Move(moveVector * Time.deltaTime);
 
-        if (Input.GetKeyDown("x"))
-        {
-            UseItem(new Item { itemType = Item.ItemType.tempPup, amount = 1 });
-        }
+        //if (Input.GetKeyDown("x"))
+        //{
+        //    UseItem(new Item { itemType = Item.ItemType.tempPup, amount = 1 });
+        //}
 
         playerVelocity.y += gravityValue * Time.fixedDeltaTime;
         controller.Move(playerVelocity * Time.fixedDeltaTime);
@@ -152,7 +152,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
     
-    private void UseItem(Item item)
+    public void UseItem(Item item)
     {
         
         switch (item.itemType)
