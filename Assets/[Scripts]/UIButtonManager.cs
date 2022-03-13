@@ -252,8 +252,18 @@ public class UIButtonManager : MonoBehaviour
         resolutionPanel.SetActive(false);
         backFromResolutionPanel.SetActive(false);
     }
-        
 
+    //========================================================================= WIN SCREEN BUTTONS ==================================================================
+
+    public void OnReplayKitchenLevelButtonPressed()
+    {
+        SceneManager.LoadScene("Level_Kitchen");
+    }
+
+    public void OnNextLevelButtonPressed()
+    {
+        //load next level
+    }
 
 
 }

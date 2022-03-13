@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/[Scenes]/Level_Kitchen.unity
     guid: 28547c00048ec8b4692b7f1aa9c7ddaa
   - enabled: 1
+    path: Assets/[Scenes]/WinScreen.unity
+    guid: 05c5e57df6659c84ca7b5a104ea9b42e
+  - enabled: 1
     path: Assets/[Scenes]/GameOver.unity
     guid: bab278d419283304396683a68c8ff5f8
   m_configObjects:
