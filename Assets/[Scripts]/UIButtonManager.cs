@@ -274,4 +274,11 @@ public class UIButtonManager : MonoBehaviour
     }
 
 
+    //========================================================================= BUTTON AUDIO ==================================================================
+
+    public void PlayButtonAudio()
+    {
+        MusicManager.musicManagerInstance.PlayMenuSFX();
+    }
+
 }

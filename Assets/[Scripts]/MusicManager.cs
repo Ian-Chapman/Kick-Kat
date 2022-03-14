@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
-    private static MusicManager musicManagerInstance;
+    public static MusicManager musicManagerInstance;
     public bool isKitchenLevelLoaded = false;
 
+    public AudioSource buttonSFXsource;
 
     private void Awake()
     {
@@ -21,6 +22,13 @@ public class MusicManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void PlayMenuSFX()
+    {
+        buttonSFXsource.Stop();
+
+        buttonSFXsource.Play();
     }
 
 }

@@ -3200,6 +3200,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &528584780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3465,6 +3477,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 751456650}
         m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
         m_MethodName: OnAudioButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -3597,6 +3621,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 751456650}
         m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
         m_MethodName: OnKeybindingsButtonPressed
@@ -4492,6 +4528,8 @@ MonoBehaviour:
   lifeCounter: {fileID: 0}
   pawsButton: {fileID: 0}
   inventory: {fileID: 0}
+  healthBar: {fileID: 0}
+  onScreenControls: {fileID: 0}
   pauseMenu: {fileID: 0}
   saveLoad: {fileID: 0}
 --- !u!1 &758131221
@@ -6696,7 +6734,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1126341345}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1126341345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6822,6 +6872,18 @@ MonoBehaviour:
       - m_Target: {fileID: 751456650}
         m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
         m_MethodName: OnResolutionBackButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8876,7 +8938,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1489901800}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1489901800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10382,6 +10456,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1598247021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11685,6 +11771,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1957296255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12299,6 +12397,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 751456650}
         m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 751456650}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
         m_MethodName: OnResolutionButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -12732,7 +12842,7 @@ PrefabInstance:
     - target: {fileID: 8039334494552771698, guid: 36090ad9de871c142a60980f56ca5b2e,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8039334494552771698, guid: 36090ad9de871c142a60980f56ca5b2e,
         type: 3}
@@ -12812,7 +12922,7 @@ PrefabInstance:
     - target: {fileID: 8039334494552771701, guid: 36090ad9de871c142a60980f56ca5b2e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36090ad9de871c142a60980f56ca5b2e, type: 3}

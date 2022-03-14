@@ -382,6 +382,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1819368153}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5505967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1152,6 +1164,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1819368153}
         m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
         m_MethodName: OnSaveButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1819368153}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5623,7 +5647,7 @@ RectTransform:
   m_Children:
   - {fileID: 880250640}
   m_Father: {fileID: 1819368152}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -5677,6 +5701,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1819368153}
         m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
         m_MethodName: OnPauseButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1819368153}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27306,6 +27342,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1819368153}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: PlayButtonAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1206251499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39375,9 +39423,9 @@ RectTransform:
   m_Children:
   - {fileID: 1907308973}
   - {fileID: 1274551515}
-  - {fileID: 301337849}
-  - {fileID: 473404457}
   - {fileID: 1595609942}
+  - {fileID: 473404457}
+  - {fileID: 301337849}
   - {fileID: 438894759}
   - {fileID: 672222076}
   - {fileID: 1858109904}
@@ -49454,7 +49502,7 @@ PrefabInstance:
     - target: {fileID: 2808685631294148854, guid: 1a049a9a3aa77ec428d0fd667044947d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2808685631294148854, guid: 1a049a9a3aa77ec428d0fd667044947d,
         type: 3}
