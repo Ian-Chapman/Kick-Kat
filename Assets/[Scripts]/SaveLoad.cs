@@ -50,7 +50,7 @@ public class SaveLoad : MonoBehaviour
         allObjects = FindObjectsOfType<GameObject>();
 
         data.lives = player.gameObject.GetComponent<ThirdPersonMovement>().lives;
-        data.lives = player.gameObject.GetComponent<ThirdPersonMovement>().health;
+        data.health = player.gameObject.GetComponent<ThirdPersonMovement>().health;
 
 
         bf.Serialize(file, data);
