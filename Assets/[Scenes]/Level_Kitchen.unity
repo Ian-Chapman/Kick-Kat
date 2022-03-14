@@ -847,6 +847,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBar
       objectReference: {fileID: 0}
+    - target: {fileID: 8874483895710693218, guid: dddd6e88ba2bdaf4284b6f9d23836603,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8874483895710693221, guid: dddd6e88ba2bdaf4284b6f9d23836603,
         type: 3}
       propertyPath: m_Pivot.x
@@ -30517,6 +30522,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1405206512}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1407687016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8874483895710693218, guid: dddd6e88ba2bdaf4284b6f9d23836603,
+    type: 3}
+  m_PrefabInstance: {fileID: 45227750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1423400999
 GameObject:
   m_ObjectHideFlags: 0
@@ -39403,6 +39414,8 @@ MonoBehaviour:
   lifeCounter: {fileID: 1274551514}
   pawsButton: {fileID: 301337848}
   inventory: {fileID: 479362783}
+  healthBar: {fileID: 1407687016}
+  onScreenControls: {fileID: 2808685629835248547}
   pauseMenu: {fileID: 438894758}
   saveLoad: {fileID: 672222075}
 --- !u!1001 &1824501914
@@ -49422,6 +49435,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OnScreenControls
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808685631294148853, guid: 1a049a9a3aa77ec428d0fd667044947d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2808685631294148854, guid: 1a049a9a3aa77ec428d0fd667044947d,
         type: 3}

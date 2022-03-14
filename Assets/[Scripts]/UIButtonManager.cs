@@ -24,6 +24,8 @@ public class UIButtonManager : MonoBehaviour
     public GameObject lifeCounter;
     public GameObject pawsButton; //pause button
     public GameObject inventory;
+    public GameObject healthBar;
+    public GameObject onScreenControls;
     //add screen mounted controls here later.
 
 
@@ -62,6 +64,8 @@ public class UIButtonManager : MonoBehaviour
         lifeCounter.SetActive(true);
         pawsButton.SetActive(true);
         inventory.SetActive(true);
+        healthBar.SetActive(true);
+        onScreenControls.SetActive(true);
 
 
 
@@ -151,6 +155,8 @@ public class UIButtonManager : MonoBehaviour
         lifeCounter.SetActive(false);
         pawsButton.SetActive(false);
         inventory.SetActive(false);
+        healthBar.SetActive(false);
+        onScreenControls.SetActive(false);
     }
 
     public void OnResumeButtonPressed()
@@ -163,6 +169,8 @@ public class UIButtonManager : MonoBehaviour
         lifeCounter.SetActive(true);
         pawsButton.SetActive(true);
         inventory.SetActive(true);
+        healthBar.SetActive(true);
+        onScreenControls.SetActive(true);
     }
 
     public void OnSaveButtonPressed()
