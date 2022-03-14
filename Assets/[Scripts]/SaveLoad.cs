@@ -13,6 +13,8 @@ class SaveData
    
     public int lives;
 
+    public int health;
+
     //public int score;
     //public int enemyCount;
     //public Vector3[] enemyPositions;  //later
@@ -48,6 +50,7 @@ public class SaveLoad : MonoBehaviour
         allObjects = FindObjectsOfType<GameObject>();
 
         data.lives = player.gameObject.GetComponent<ThirdPersonMovement>().lives;
+        data.lives = player.gameObject.GetComponent<ThirdPersonMovement>().health;
 
 
         bf.Serialize(file, data);
@@ -73,6 +76,7 @@ public class SaveLoad : MonoBehaviour
             var RotZ = data.playerRotation[2];
 
             var savedLives = data.lives;
+            var savedHealth = data.health;
 
             player.gameObject.GetComponent<CharacterController>().enabled = false;
             player.position = new Vector3(x, y, z);
@@ -80,6 +84,7 @@ public class SaveLoad : MonoBehaviour
             player.gameObject.GetComponent<CharacterController>().enabled = true;
 
             player.gameObject.GetComponent<ThirdPersonMovement>().lives = savedLives;
+            player.gameObject.GetComponent<ThirdPersonMovement>().health = savedHealth;
 
             Debug.Log("Game data loaded!");
             print(savedLives);

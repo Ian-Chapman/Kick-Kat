@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 [RequireComponent(typeof (CharacterController))]
@@ -48,11 +49,16 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public int lives = 9;
 
+    public int health = 100;
+
     public TextMeshProUGUI livesText;
 
     public GameObject saveLoad;
 
     private int newGameCheck;
+
+    public Slider healthBar;
+    public TMP_Text healthBarValueLabel;
 
     void Start()
     {
@@ -71,7 +77,10 @@ public class ThirdPersonMovement : MonoBehaviour
             if (PlayerPrefs.GetInt("NewGameCheck") == 0) // if the kitchen scene loads and it's not a new game (0 == false)
             {
                 saveLoad.GetComponent<SaveLoad>().OnLoadButton_Pressed(); //we load the game
-                
+
+                healthBar.value = health;
+                healthBarValueLabel.text = healthBar.value.ToString();
+
 
             }
         }
@@ -209,20 +218,40 @@ public class ThirdPersonMovement : MonoBehaviour
         if (deathCoroutine != null)
             return;
 
+        health -= 34;
+
+        healthBar.value = health;
+
+        healthBarValueLabel.text = healthBar.value.ToString();
+
+
         deathCoroutine = TakeDamage();
         StartCoroutine(deathCoroutine);
-        lives--;
-        livesText.text = "x" + lives.ToString();
+
+
+
     }
 
     public IEnumerator TakeDamage()
     {
+        
         animator.SetBool("isDamaged", true);
         yield return new WaitForSeconds(0.5f); //animation duration should match this timing
         animator.SetBool("isDamaged", false);
 
         GetComponent<CharacterController>().enabled = false;
-        this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
+        if(health <= 0)
+
+        {
+            lives--;
+            livesText.text = "x" + lives.ToString();
+            this.transform.position = new Vector3(20.3f, 1.7f, -15.456f); //Players starting position in the level
+            health = 100;
+
+            healthBar.value = health;
+            healthBarValueLabel.text = healthBar.value.ToString();
+        }
+        
         GetComponent<CharacterController>().enabled = true;
 
         deathCoroutine = null;
