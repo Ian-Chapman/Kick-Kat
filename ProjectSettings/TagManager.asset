@@ -17,6 +17,7 @@ TagManager:
   - Rat
   - RatA
   - Sword
+  - FollowTarget
   layers:
   - Default
   - TransparentFX
