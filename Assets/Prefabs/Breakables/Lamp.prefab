@@ -16,6 +16,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 492194, guid: 7e6ebc7d61edd4d40a6325bac2e995c4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 492194, guid: 7e6ebc7d61edd4d40a6325bac2e995c4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 492194, guid: 7e6ebc7d61edd4d40a6325bac2e995c4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 492194, guid: 7e6ebc7d61edd4d40a6325bac2e995c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -66,18 +78,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
+      propertyPath: particleColor.key0.b
+      value: 0.6627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
+      propertyPath: particleColor.key0.g
+      value: 0.64705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
+      propertyPath: particleColor.key0.r
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
       propertyPath: particleColor.key1.b
-      value: 0.6117647
+      value: 0.18039216
       objectReference: {fileID: 0}
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: particleColor.key1.g
-      value: 0.2627451
+      value: 0.3803922
       objectReference: {fileID: 0}
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: particleColor.key1.r
-      value: 0.7725491
+      value: 0.43137258
       objectReference: {fileID: 0}
     - target: {fileID: 7123399993186890786, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
@@ -137,7 +164,7 @@ PrefabInstance:
     - target: {fileID: 7123399993186890789, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: m_Name
-      value: DES
+      value: Lamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5c37e8db2bfa3442b71d479d9e4b052, type: 3}

@@ -10,17 +10,17 @@ PrefabInstance:
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: particleColor.key1.b
-      value: 0
+      value: 0.48627454
       objectReference: {fileID: 0}
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: particleColor.key1.g
-      value: 0
+      value: 0.20392159
       objectReference: {fileID: 0}
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: particleColor.key1.r
-      value: 1
+      value: 0.60784316
       objectReference: {fileID: 0}
     - target: {fileID: 7123399993186890786, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}

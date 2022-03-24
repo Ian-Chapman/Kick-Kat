@@ -82,18 +82,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
+      propertyPath: particleColor.key0.b
+      value: 0.03529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
+      propertyPath: particleColor.key0.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
+      propertyPath: particleColor.key0.r
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
       propertyPath: particleColor.key1.b
-      value: 0.6117647
+      value: 0.7254902
       objectReference: {fileID: 0}
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: particleColor.key1.g
-      value: 0.2627451
+      value: 0.6901961
       objectReference: {fileID: 0}
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: particleColor.key1.r
-      value: 0.7725491
+      value: 0.67058825
       objectReference: {fileID: 0}
     - target: {fileID: 7123399993186890786, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
@@ -153,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 7123399993186890789, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: m_Name
-      value: DES
+      value: Keyboard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5c37e8db2bfa3442b71d479d9e4b052, type: 3}
