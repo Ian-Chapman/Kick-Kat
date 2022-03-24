@@ -12,7 +12,12 @@ public class DestructibleComponent : MonoBehaviour
     private GameObject destructibleProp;
     [SerializeField]
     private List<ParticleSystem> particleSystems;
+    [SerializeField]
+    private ParticleSystem bubbleSystem;
     private AudioSource audioSource;
+
+    [SerializeField]
+    private SpeechBubbleSet bubbleSet;
 
     private bool isDestroyed = false;
 
@@ -32,10 +37,18 @@ public class DestructibleComponent : MonoBehaviour
             {
                 foreach (ParticleSystem ps in particleSystems)
                 {
+                    // Particle Color
                     var main = ps.main;
                     main.startColor = particleColor;
+
                     ps.Play();
                 }
+            }
+
+            if (bubbleSystem != null && bubbleSet != null)
+            {
+                bubbleSystem.GetComponent<ParticleSystemRenderer>().material = bubbleSet.GetRandomBubble();
+                bubbleSystem.Play();
             }
 
             if (audioSource != null)
