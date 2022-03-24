@@ -5890,7 +5890,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 10
+        scalar: 30
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -9833,7 +9833,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &2104108137813402350
 MonoBehaviour:
   m_ObjectHideFlags: 0
