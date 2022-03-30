@@ -58,7 +58,7 @@ public class DestructibleComponent : MonoBehaviour
 
             // Destroy Prop
             destructibleProp.SetActive(false);
-
+            ScoreManager.Instance.IncreaseScore(50);
             isDestroyed = true;
         }
     }
