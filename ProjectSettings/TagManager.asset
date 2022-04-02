@@ -18,6 +18,10 @@ TagManager:
   - RatA
   - Sword
   - FollowTarget
+  - Right Foot
+  - Left Foot
+  - Right Paw
+  - Left Paw
   layers:
   - Default
   - TransparentFX

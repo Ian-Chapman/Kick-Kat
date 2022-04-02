@@ -175,6 +175,11 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             StartTakeDamage(100);
         }
+
+        //if (other.gameObject.tag == "Rat")
+        //{
+        //    StartTakeDamage();
+        //}
     }
 
     public void OnCollisionEnter(Collision other)

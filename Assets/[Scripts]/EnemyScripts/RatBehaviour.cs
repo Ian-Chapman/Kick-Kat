@@ -6,13 +6,14 @@ public class RatBehaviour : MonoBehaviour
 {
     public Animator ratAnimator;
     public Transform player;
+    public AudioSource audioSource;
 
     public List<Transform> patrolPoints = new List <Transform>();
 
     private int patrolPointIndex;
     private float distToPatrolPoint;
 
-    
+    public int ratHealth = 2;
 
     public float speed = 1;
     
@@ -21,14 +22,16 @@ public class RatBehaviour : MonoBehaviour
     void Start()
     {
         ratAnimator = GetComponent<Animator>();
-
         patrolPointIndex = 0; //First partol point in index
+        audioSource = GetComponent <AudioSource>();
         //transform.LookAt(patrolPoints[patrolPointIndex].position);
     }
 
     // Update is called once per frame
     void Update()
     {
+        CheckRatHealth();
+
         distToPatrolPoint = Vector3.Distance(transform.position, patrolPoints[patrolPointIndex].position);
         if (distToPatrolPoint < 1f)
         {
@@ -58,6 +61,38 @@ public class RatBehaviour : MonoBehaviour
     {
         transform.LookAt(player.position);
         transform.position += transform.forward * speed * Time.deltaTime;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if ((other.gameObject.tag == "Right Foot") || (other.gameObject.tag == "Left Foot") ||
+            (other.gameObject.tag == "Right Paw") || (other.gameObject.tag == "Left Paw"))
+        {
+            ratHealth--;
+            Debug.Log(ratHealth);
+        }
+
+        if (other.gameObject.tag == "Floor")
+        {
+            ratHealth = 0;
+        }
+    }
+
+    void CheckRatHealth()
+    {
+        if (ratHealth <= 0)
+        {
+            StartCoroutine(RatDeath());
+        }
+    }
+
+    IEnumerator RatDeath()
+    {
+        //yield return new WaitForSeconds(1.5f);
+        ratAnimator.SetBool("isDying", true);
+        yield return new WaitForSeconds(1.5f);
+        Destroy(gameObject);
+
     }
 
 }

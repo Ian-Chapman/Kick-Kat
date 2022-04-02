@@ -6,8 +6,8 @@ public class DestructibleComponent : MonoBehaviour
 {
     [SerializeField]
     private Gradient particleColor;
-    [SerializeField]
-    private string playerAttackTag;
+    //[SerializeField]
+    //private string playerAttackTag;
     [SerializeField]
     private GameObject destructibleProp;
     [SerializeField]
@@ -33,7 +33,8 @@ public class DestructibleComponent : MonoBehaviour
         if (isDestroyed) return;
 
         // When the player enters the area, play the particle system and sound effect
-        if (other.CompareTag(playerAttackTag))
+        if (other.CompareTag("Right Foot") || other.CompareTag("Left Foot") ||
+            other.CompareTag("Right Paw") || other.CompareTag("Left Paw"))
         {
             if (particleSystems != null && particleSystems.Count > 0)
             {

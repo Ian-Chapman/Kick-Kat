@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class CarmellaAnimationManager : MonoBehaviour
 {
+    PlayerAttackController playerAttackController;
+
+    public CapsuleCollider leftFootCollider;
+    public CapsuleCollider rightFootCollider;
+    public BoxCollider leftPawCollider;
+    public BoxCollider rightPawCollider;
+
     ThirdPersonMovement thirdPersonMovement;
     public Joystick rightHandJoystick;
     public Joystick leftHandJoystick;
@@ -33,7 +40,13 @@ public class CarmellaAnimationManager : MonoBehaviour
 
 
 
-
+    private void Awake()
+    {
+        leftFootCollider.enabled = false;
+        rightFootCollider.enabled = false;
+        leftPawCollider.enabled = false;
+        rightPawCollider.enabled = false;
+    }
 
 
     // Start is called before the first frame update
@@ -42,15 +55,11 @@ public class CarmellaAnimationManager : MonoBehaviour
         thirdPersonMovement = gameObject.GetComponent<ThirdPersonMovement>();
         body = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        //isWalkingHash = Animator.StringToHash("isWalking");
+        playerAttackController = gameObject.GetComponent<PlayerAttackController>();
     }
 
     void FixedUpdate()
     {
-
-        //float velocity = Mathf.Abs(body.velocity.x);
-        //m_vPrevVel = body.velocity;
-
         animInput();
     }
 
@@ -172,17 +181,23 @@ public class CarmellaAnimationManager : MonoBehaviour
         if (((forwardPressed || backPressed || rightPressed || leftPressed)) && Input.GetKeyDown(PlayerKeybinds.PlayerPunch))
         {
             animator.SetBool("isRunPunch", true);
+            leftPawCollider.enabled = true;
         }
         else
             animator.SetBool("isRunPunch", false);
+            leftPawCollider.enabled = false;
 
         //Running Kick
         if (((forwardPressed || backPressed || rightPressed || leftPressed)) && Input.GetKeyDown(PlayerKeybinds.PlayerKick))
         {
             animator.SetBool("isRunKick", true);
+            leftFootCollider.enabled = true;
         }
         else
+        {
             animator.SetBool("isRunKick", false);
+            leftFootCollider.enabled = false;
+        }
 
     }
 

@@ -452,6 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720091601444758044}
   - component: {fileID: 4919084410370900026}
+  - component: {fileID: 1485069334}
   m_Layer: 0
   m_Name: Hip
   m_TagString: Untagged
@@ -490,10 +491,24 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.16683623
+  m_Radius: 0.12886862
   m_Height: 0.78866357
   m_Direction: 0
-  m_Center: {x: -0.263178, y: -0.017921047, z: 0.0634021}
+  m_Center: {x: -0.263178, y: -0.021581493, z: 0.063402034}
+--- !u!136 &1485069334
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720091601444863548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.1808138
+  m_Height: 0.8122253
+  m_Direction: 0
+  m_Center: {x: -0.27495846, y: -0.02125319, z: 0.06151117}
 --- !u!1 &720091601444863550
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +857,7 @@ GameObject:
   - component: {fileID: 4919084409240051322}
   m_Layer: 0
   m_Name: Rat
-  m_TagString: Untagged
+  m_TagString: Rat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1010,11 +1025,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratAnimator: {fileID: 720091601435463138}
   player: {fileID: 0}
+  audioSource: {fileID: 1262354109222136056}
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  ratHealth: 3
   speed: 1
 --- !u!1 &720091601444863568
 GameObject:
