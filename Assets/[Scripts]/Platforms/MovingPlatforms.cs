@@ -12,6 +12,7 @@ public class MovingPlatforms : MonoBehaviour
 
     [SerializeField]
     Transform platform;
+    private PlatformParenter platformParenter;
     [SerializeField]
     Transform endTransform;
     [SerializeField]
@@ -33,12 +34,22 @@ public class MovingPlatforms : MonoBehaviour
 
         targetDistance = (endPos - startPos).magnitude;
         targetDestination = endPos;
+
+        platformParenter = platform.GetComponent<PlatformParenter>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Move();
+        if (platformParenter.player == null)
+            Move();
+        else
+        {
+            ThirdPersonMovement.controller.enabled = false;
+            Move();
+            ThirdPersonMovement.controller.enabled = true;
+        }
+
         EndCheck();
     }
 
@@ -49,7 +60,7 @@ public class MovingPlatforms : MonoBehaviour
         dir.Normalize();
 
         // Movement  based on the move rate curve and multiplier
-        platform.position += dir * moveRateCurve.Evaluate(distance) * moveRateMultiplier * Time.deltaTime;
+        platform.position += dir * moveRateCurve.Evaluate(distance) * moveRateMultiplier * Time.fixedDeltaTime;
     }
 
     private void EndCheck()

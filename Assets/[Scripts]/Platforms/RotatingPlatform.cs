@@ -16,14 +16,27 @@ public class RotatingPlatform : MonoBehaviour
 
     [SerializeField]
     Transform platform;
+    private PlatformParenter platformParenter;
 
     private bool positiveRotation = true;
     private float curvePos = 0.0f;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        Rotate();
+        platformParenter = platform.GetComponent<PlatformParenter>();
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        if (platformParenter.player == null)
+            Rotate();
+        else
+        {
+            ThirdPersonMovement.controller.enabled = false;
+            Rotate();
+            ThirdPersonMovement.controller.enabled = true;
+        }
     }
 
     private void Rotate()
@@ -38,9 +51,9 @@ public class RotatingPlatform : MonoBehaviour
         if (pingPong)
         {
             if (positiveRotation)
-                curvePos += Time.deltaTime * rotationRateMultiplier;
+                curvePos += Time.fixedDeltaTime * rotationRateMultiplier;
             else
-                curvePos -= Time.deltaTime * rotationRateMultiplier;
+                curvePos -= Time.fixedDeltaTime * rotationRateMultiplier;
 
             if (curvePos > 1.0f)
             {
@@ -55,7 +68,7 @@ public class RotatingPlatform : MonoBehaviour
         }
         else
         {
-            curvePos += Time.deltaTime * rotationRateMultiplier;
+            curvePos += Time.fixedDeltaTime * rotationRateMultiplier;
 
             if (curvePos > 1.0f)
             {
