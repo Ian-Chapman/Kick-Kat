@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DestructibleComponent : MonoBehaviour
 {
+
+
     [SerializeField]
     private int objectHealth = 1;
     [SerializeField]
@@ -31,6 +33,7 @@ public class DestructibleComponent : MonoBehaviour
     {
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -67,6 +70,7 @@ public class DestructibleComponent : MonoBehaviour
                     audioSource.Stop();
                 else
                     audioSource.Play();
+
             }
 
             // Destroy Prop

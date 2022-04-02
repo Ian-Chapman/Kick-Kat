@@ -39,7 +39,7 @@ public class PlayerAttackController : MonoBehaviour
         if (Time.time - prevClickTime > maxComboDelay) 
         {
             numOfClicks = 0;
-            rightFootCollider.enabled = false;
+            //rightFootCollider.enabled = false;
         }
 
         if (Application.platform == RuntimePlatform.Android ||
