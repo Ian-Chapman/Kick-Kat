@@ -78,6 +78,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
+      propertyPath: scoreValue
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
+      propertyPath: objectHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
       propertyPath: particleColor.key0.b
       value: 1
       objectReference: {fileID: 0}

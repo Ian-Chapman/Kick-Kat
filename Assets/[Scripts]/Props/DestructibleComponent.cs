@@ -5,6 +5,11 @@ using UnityEngine;
 public class DestructibleComponent : MonoBehaviour
 {
     [SerializeField]
+    private int objectHealth = 1;
+    [SerializeField]
+    private int scoreValue = 50;
+
+    [SerializeField]
     private Gradient particleColor;
     //[SerializeField]
     //private string playerAttackTag;
@@ -54,6 +59,8 @@ public class DestructibleComponent : MonoBehaviour
                 bubbleSystem.Play();
             }
 
+            if (--objectHealth > 0) return;
+
             if (audioSource != null)
             {
                 if (audioSource.isPlaying)
@@ -65,7 +72,7 @@ public class DestructibleComponent : MonoBehaviour
             // Destroy Prop
             destructibleProp.SetActive(false);
             if (ScoreManager.Instance != null)
-                ScoreManager.Instance.IncreaseScore(50);
+                ScoreManager.Instance.IncreaseScore(scoreValue);
             isDestroyed = true;
         }
     }
