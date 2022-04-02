@@ -28689,7 +28689,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 1
+  MinDistance: 25
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -28740,7 +28740,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -31162,6 +31162,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1012111610}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1014475614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 139132, guid: 09723806f6049b84c8f25d8defdad7c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 702862247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1014475618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014475614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 139cc52ac06a12440b8ed6074231dbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1021888253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36679,6 +36697,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7922871262026757982}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1215049120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 139132, guid: 09723806f6049b84c8f25d8defdad7c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1555605740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1216120249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40894,6 +40918,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1607106745}
     m_Modifications:
+    - target: {fileID: 1353407454136897679, guid: 8cdd163ebcee0ac4f8ac925dbe84c060,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 946754715}
     - target: {fileID: 7863400749453985347, guid: 8cdd163ebcee0ac4f8ac925dbe84c060,
         type: 3}
       propertyPath: m_RootOrder
@@ -45139,6 +45168,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1555605740}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1555605745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215049120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 139cc52ac06a12440b8ed6074231dbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1558786419
 GameObject:
   m_ObjectHideFlags: 0

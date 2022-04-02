@@ -14,6 +14,7 @@ public class DestructibleComponent : MonoBehaviour
     private List<ParticleSystem> particleSystems;
     [SerializeField]
     private ParticleSystem bubbleSystem;
+    [SerializeField]
     private AudioSource audioSource;
 
     [SerializeField]
@@ -23,7 +24,8 @@ public class DestructibleComponent : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -53,12 +55,16 @@ public class DestructibleComponent : MonoBehaviour
 
             if (audioSource != null)
             {
-                audioSource.Play();
+                if (audioSource.isPlaying)
+                    audioSource.Stop();
+                else
+                    audioSource.Play();
             }
 
             // Destroy Prop
             destructibleProp.SetActive(false);
-            ScoreManager.Instance.IncreaseScore(50);
+            if (ScoreManager.Instance != null)
+                ScoreManager.Instance.IncreaseScore(50);
             isDestroyed = true;
         }
     }
