@@ -2220,7 +2220,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35000
+  m_Name: pb_Mesh70472
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58956,6 +58956,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 693821c70dc91284c9eeda1318971642, type: 3}
   - {fileID: 8300000, guid: e975c9e799223e14caf80129b1371e4b, type: 3}
   audioSource: {fileID: 1707439605}
+  rightFootCollider: {fileID: 0}
+  leftFootCollider: {fileID: 0}
+  rightPawCollider: {fileID: 0}
+  leftPawCollider: {fileID: 0}
+  isAttacking: 0
 --- !u!82 &1707439605 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8587725167264402459, guid: 0d13921c68a31734ca406944b62778ee,
