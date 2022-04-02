@@ -160,7 +160,7 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             audioSource.clip = audioClips[1];
             audioSource.Play();
-            StartTakeDamage();
+            StartTakeDamage(100);
         }
 
         if ((other.gameObject.tag == "StoveBurner"))
@@ -168,12 +168,12 @@ public class ThirdPersonMovement : MonoBehaviour
             
             audioSource.clip = audioClips[2];
             audioSource.Play();
-            StartTakeDamage();
+            StartTakeDamage(100);
         }
 
         if ((other.gameObject.layer == LayerMask.NameToLayer("Hazard")))
         {
-            StartTakeDamage();
+            StartTakeDamage(100);
         }
     }
 
@@ -213,12 +213,12 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    public void StartTakeDamage()
+    public void StartTakeDamage(int damage = 34)
     {
         if (deathCoroutine != null)
             return;
 
-        health -= 34;
+        health -= damage;
 
         healthBar.value = health;
 
@@ -227,9 +227,6 @@ public class ThirdPersonMovement : MonoBehaviour
 
         deathCoroutine = TakeDamage();
         StartCoroutine(deathCoroutine);
-
-
-
     }
 
     public IEnumerator TakeDamage()
