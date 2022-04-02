@@ -36,7 +36,7 @@ public class MovingPlatforms : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Move();
         EndCheck();
@@ -49,7 +49,7 @@ public class MovingPlatforms : MonoBehaviour
         dir.Normalize();
 
         // Movement  based on the move rate curve and multiplier
-        platform.position += dir * moveRateCurve.Evaluate(distance) * moveRateMultiplier * Time.fixedDeltaTime;
+        platform.position += dir * moveRateCurve.Evaluate(distance) * moveRateMultiplier * Time.deltaTime;
     }
 
     private void EndCheck()

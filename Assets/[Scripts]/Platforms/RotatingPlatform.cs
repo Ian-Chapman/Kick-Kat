@@ -21,7 +21,7 @@ public class RotatingPlatform : MonoBehaviour
     private float curvePos = 0.0f;
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Rotate();
     }
@@ -38,9 +38,9 @@ public class RotatingPlatform : MonoBehaviour
         if (pingPong)
         {
             if (positiveRotation)
-                curvePos += Time.fixedDeltaTime * rotationRateMultiplier;
+                curvePos += Time.deltaTime * rotationRateMultiplier;
             else
-                curvePos -= Time.fixedDeltaTime * rotationRateMultiplier;
+                curvePos -= Time.deltaTime * rotationRateMultiplier;
 
             if (curvePos > 1.0f)
             {
@@ -55,16 +55,13 @@ public class RotatingPlatform : MonoBehaviour
         }
         else
         {
-            curvePos += Time.fixedDeltaTime * rotationRateMultiplier;
+            curvePos += Time.deltaTime * rotationRateMultiplier;
 
             if (curvePos > 1.0f)
             {
                 curvePos -= 1.0f;
             }
         }
-
-
-        
 
         return curvePos;
     }
