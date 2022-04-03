@@ -2636,12 +2636,12 @@ PrefabInstance:
     - target: {fileID: 1599619665293157499, guid: 1a049a9a3aa77ec428d0fd667044947d,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ThirdPersonMovement, Assembly-CSharp
+      value: CarmellaAnimationManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1599619665293157499, guid: 1a049a9a3aa77ec428d0fd667044947d,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: CarmellaAnimationManager, Assembly-CSharp
+      value: ThirdPersonMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1599619665293157499, guid: 1a049a9a3aa77ec428d0fd667044947d,
         type: 3}

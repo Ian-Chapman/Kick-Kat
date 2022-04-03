@@ -12,23 +12,32 @@ EditorBuildSettings:
     path: Assets/[Scenes]/OptionsMenu.unity
     guid: 7fa58ddda5abdc845ad66071b44df5d7
   - enabled: 1
+    path: Assets/[Scenes]/Level_LivingRoom.unity
+    guid: ec2c4e5d8fff1bd4f83a3fde9d172df5
+  - enabled: 1
+    path: Assets/[Scenes]/LivingRoomWinScreen.unity
+    guid: 7bcf073907872da40b59865b61a8faa6
+  - enabled: 1
     path: Assets/[Scenes]/Level_Kitchen.unity
     guid: 28547c00048ec8b4692b7f1aa9c7ddaa
   - enabled: 1
-    path: Assets/[Scenes]/WinScreen.unity
-    guid: 05c5e57df6659c84ca7b5a104ea9b42e
-  - enabled: 1
-    path: Assets/[Scenes]/GameOver.unity
-    guid: bab278d419283304396683a68c8ff5f8
-  - enabled: 1
-    path: Assets/[Scenes]/Level_Bathroom.unity
-    guid: c1621b3d160d1174e881dcbd9caae25d
+    path: Assets/[Scenes]/KitchenWinScreen.unity
+    guid: fc79cddcc0381524a9547b26dd703116
   - enabled: 1
     path: Assets/[Scenes]/Level_Bedroom.unity
     guid: a332cff66b5126a45827623e21fd13f8
   - enabled: 1
-    path: Assets/[Scenes]/Level_LivingRoom.unity
-    guid: ec2c4e5d8fff1bd4f83a3fde9d172df5
+    path: Assets/[Scenes]/BedroomWinScreen.unity
+    guid: 883f8dedfb95dbd4690d6668dd20eaed
+  - enabled: 1
+    path: Assets/[Scenes]/Level_Bathroom.unity
+    guid: c1621b3d160d1174e881dcbd9caae25d
+  - enabled: 1
+    path: Assets/[Scenes]/BathroomWinScreen.unity
+    guid: b4277828cc195814c98367b345ef0c09
+  - enabled: 1
+    path: Assets/[Scenes]/GameOver.unity
+    guid: bab278d419283304396683a68c8ff5f8
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 2f4ecfd14aea4e44ab7d91410ce53979, type: 2}

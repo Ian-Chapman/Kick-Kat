@@ -129,7 +129,7 @@ public class UIButtonManager : MonoBehaviour
         //audioSource.Stop();
         newGameCheck = 1;
         PlayerPrefs.SetInt("NewGameCheck", newGameCheck); // when we load the play scene we need to see if the game is new or loaded
-        SceneManager.LoadScene("Level_Kitchen");
+        SceneManager.LoadScene("Level_LivingRoom");
         //audioSource.Stop();
     }
 
@@ -137,7 +137,7 @@ public class UIButtonManager : MonoBehaviour
     {
         newGameCheck = 0;
         PlayerPrefs.SetInt("NewGameCheck", newGameCheck); // when we load the play scene we need to see if the game is new or loaded
-        SceneManager.LoadScene("Level_Kitchen");
+        SceneManager.LoadScene("Level_LivingRoom");
     }
 
     public void OnHowToPlayButtonPressed()
@@ -325,11 +325,30 @@ public class UIButtonManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
+    public void OnLivingRoomWinScreen_NextLevelPressed()
+    {
+        SceneManager.LoadScene("Level_Kitchen");
+    }
+
+    public void OnKitchenWinScreen_NextLevelPressed()
+    {
+        SceneManager.LoadScene("Level_Bathroom");
+    }
+
+    public void OnBedroomWinScreen_NextLevelPressed()
+    {
+        SceneManager.LoadScene("Level_Bathroom");
+    }
+
+
+
+
+
 
 
     //public void OnNextLevelButtonPressed()
     //{
-        
+
     //    check what previous scene was, then load the next scene after the game over scene
     //}
 
