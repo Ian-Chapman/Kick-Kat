@@ -40,6 +40,7 @@ public class SaveLoad : MonoBehaviour
     private void Start()
     {
         scoreManager = GameObject.Find("ScoreManager");
+        player = GameObject.Find("CatGirlChar").transform;
     }
 
     // Serialize the player data
