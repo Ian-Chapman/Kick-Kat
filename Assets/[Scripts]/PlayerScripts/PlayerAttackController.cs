@@ -18,8 +18,6 @@ public class PlayerAttackController : MonoBehaviour
     public BoxCollider rightPawCollider;
     public BoxCollider leftPawCollider;
 
-    public bool isAttacking = false;
-
 
     // Start is called before the first frame update
     void Start()
@@ -39,17 +37,21 @@ public class PlayerAttackController : MonoBehaviour
         if (Time.time - prevClickTime > maxComboDelay) 
         {
             numOfClicks = 0;
-            //rightFootCollider.enabled = false;
         }
 
         if (Application.platform == RuntimePlatform.Android ||
             Application.platform == RuntimePlatform.IPhonePlayer)
             return;
 
+        //prevent animation bug where player is stuck at end of finishing kick animation
+        if (numOfClicks <=0)
+        {
+            animator.SetBool("isKick1", false);
+        }
+
         if (Input.GetKeyDown(PlayerKeybinds.PlayerPunch))
         {
-            
-
+        
             prevClickTime = Time.time;
             numOfClicks++;
 
@@ -63,7 +65,6 @@ public class PlayerAttackController : MonoBehaviour
             numOfClicks = Mathf.Clamp(numOfClicks, 0, 4);
         }
 
-        CheckIsAttacking();
     }
 
     // Keyframe functions
@@ -79,7 +80,6 @@ public class PlayerAttackController : MonoBehaviour
         {
             animator.SetBool("isKick1", false);
             rightFootCollider.enabled = false;
-            isAttacking = false;
             numOfClicks = 0;
         }
     }
@@ -96,7 +96,6 @@ public class PlayerAttackController : MonoBehaviour
         {
             animator.SetBool("isKick2", false);
             leftFootCollider.enabled = false;
-            isAttacking = false;
             numOfClicks = 0;
         }
     }
@@ -113,20 +112,17 @@ public class PlayerAttackController : MonoBehaviour
         {
             animator.SetBool("isKick3", false);
             leftFootCollider.enabled = false;
-            isAttacking = false;
             numOfClicks = 0;
         }
     }
 
     public void return4()
     {
-
         animator.SetBool("isKick1", false);
         animator.SetBool("isKick2", false);
         animator.SetBool("isKick3", false);
         animator.SetBool("isFinishingKick", false);
         numOfClicks = 0;
-
     }
 
     //Attack grunt sound effect
@@ -163,16 +159,5 @@ public class PlayerAttackController : MonoBehaviour
         numOfClicks = Mathf.Clamp(numOfClicks, 0, 4);
     }
 
-    public void CheckIsAttacking()
-    {
-        if ((rightFootCollider.enabled == true) || (leftFootCollider.enabled == true) ||
-            (rightPawCollider.enabled == true) || (leftPawCollider.enabled == true))
-        {
-            isAttacking = true;
-        }
-        else
-            isAttacking = false;
-
-    }
 
 }
