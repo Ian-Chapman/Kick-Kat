@@ -214,6 +214,7 @@ public class ThirdPersonMovement : MonoBehaviour
                 inventory.RemoveItem(new Item { itemType = Item.ItemType.PowerUp, amount = 1 });
                 if (lives < 9)
                     lives++;
+                livesText.text = "x" + lives.ToString();
                 break;
 
             case Item.ItemType.tempPup:
