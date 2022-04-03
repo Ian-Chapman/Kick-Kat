@@ -7,6 +7,8 @@ public class UIButtonManager : MonoBehaviour
 {
     public AudioSource audioSource;
 
+    //public GameObject UICanvas;
+
     [Header("Main Menu UI")]
     public GameObject title;
     public GameObject newGameButton;
@@ -84,6 +86,8 @@ public class UIButtonManager : MonoBehaviour
         inventory.SetActive(true);
         healthBar.SetActive(true);
         onScreenControls.SetActive(true);
+
+        //UICanvas.SetActive(true);
 
     }
 
@@ -180,6 +184,8 @@ public class UIButtonManager : MonoBehaviour
         pauseMenu.SetActive(true);
         audioSource.Pause();
 
+        //UICanvas.SetActive(false);
+
         //if (Input.GetKeyDown("escape") && isPaused == false)
         //{
         //    Time.timeScale = 0;
@@ -192,14 +198,14 @@ public class UIButtonManager : MonoBehaviour
         //    pauseMenu.SetActive(false);
         //}
 
-        
 
-        miniMap.SetActive(false);
-        lifeCounter.SetActive(false);
-        pawsButton.SetActive(false);
-        inventory.SetActive(false);
-        healthBar.SetActive(false);
-        onScreenControls.SetActive(false);
+
+        //miniMap.SetActive(false);
+        //lifeCounter.SetActive(false);
+        //pawsButton.SetActive(false);
+        //inventory.SetActive(false);
+        //healthBar.SetActive(false);
+        //onScreenControls.SetActive(false);
     }
 
     public void OnResumeButtonPressed()
@@ -208,12 +214,14 @@ public class UIButtonManager : MonoBehaviour
         pauseMenu.SetActive(false);
         audioSource.Play();
 
-        miniMap.SetActive(true);
-        lifeCounter.SetActive(true);
-        pawsButton.SetActive(true);
-        inventory.SetActive(true);
-        healthBar.SetActive(true);
-        onScreenControls.SetActive(true);
+        //UICanvas.SetActive(true);
+
+        //miniMap.SetActive(true);
+        //lifeCounter.SetActive(true);
+        //pawsButton.SetActive(true);
+        //inventory.SetActive(true);
+        //healthBar.SetActive(true);
+        //onScreenControls.SetActive(true);
     }
 
     public void OnSaveButtonPressed()
