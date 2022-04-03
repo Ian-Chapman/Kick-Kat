@@ -135,9 +135,23 @@ public class UIButtonManager : MonoBehaviour
 
     public void OnContinueButtonPressed()
     {
-        newGameCheck = 0;
-        PlayerPrefs.SetInt("NewGameCheck", newGameCheck); // when we load the play scene we need to see if the game is new or loaded
-        SceneManager.LoadScene("Level_LivingRoom");
+        
+         // when we load the play scene we need to see if the game is new or loaded
+
+        if (PlayerPrefs.GetString("savedScene") != null)
+        {
+            newGameCheck = 0;
+            PlayerPrefs.SetInt("NewGameCheck", newGameCheck);
+            SceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
+        }
+        else
+        {
+            newGameCheck = 1;
+            PlayerPrefs.SetInt("NewGameCheck", newGameCheck);
+            SceneManager.LoadScene("Level_LivingRoom");
+            print("save game corrupt or could not be found");
+        }
+        
     }
 
     public void OnHowToPlayButtonPressed()
