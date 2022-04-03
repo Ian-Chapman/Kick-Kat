@@ -14,12 +14,19 @@ public class ScoreManager : MonoBehaviour
     bool goalActivated = false;
 
     public int score;
+    [Header("UI")]
     public TextMeshProUGUI scoreTxt;
+    public TextMeshProUGUI scoreGoalText;
+    public Animator goalAchievedAnimator;
+
     private void Awake()
     {
         score = 0;
         Instance = this;
         DontDestroyOnLoad(this);
+
+        scoreGoalText.text = scoreGoal.ToString();
+        scoreGoalAchievedEvent.AddListener(GoalAchievedTextChange);
     }
 
     private void Update()
@@ -48,5 +55,11 @@ public class ScoreManager : MonoBehaviour
     public void ClearScore()
     {
         score = 0;
+    }
+
+    private void GoalAchievedTextChange()
+    {
+        goalAchievedAnimator.SetTrigger("GoalAchieved");
+        scoreTxt.color = Color.red;
     }
 }
