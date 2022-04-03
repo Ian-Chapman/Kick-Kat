@@ -207,17 +207,18 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             case Item.ItemType.Points:
                 inventory.RemoveItem(new Item { itemType = Item.ItemType.Points, amount = 1 });
-                // add behaviour here
+                ScoreManager.Instance.IncreaseScore(150);
                 break;
 
             case Item.ItemType.PowerUp:
                 inventory.RemoveItem(new Item { itemType = Item.ItemType.PowerUp, amount = 1 });
-                // add behaviour here
+                if (lives < 9)
+                    lives++;
                 break;
 
             case Item.ItemType.tempPup:
                 inventory.RemoveItem(new Item { itemType = Item.ItemType.tempPup, amount = 1 });
-                // add behaviour here
+                StartCoroutine(TempBuff());
                 break;
         }
     }
@@ -261,6 +262,13 @@ public class ThirdPersonMovement : MonoBehaviour
         GetComponent<CharacterController>().enabled = true;
 
         deathCoroutine = null;
+    }
+
+    public IEnumerator TempBuff()
+    {
+        speed *= 2;
+        yield return new WaitForSeconds(5);
+        speed /= 2;
     }
 
     /// UI Button Functions ///
