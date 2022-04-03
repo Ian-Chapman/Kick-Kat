@@ -45,6 +45,8 @@ public class SaveLoad : MonoBehaviour
     // Serialize the player data
     private void SaveGame()
     {
+        PlayerPrefs.SetString("savedScene", SceneManager.GetActiveScene().name);
+
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/MySaveData.dat");
         SaveData data = new SaveData();
@@ -62,11 +64,12 @@ public class SaveLoad : MonoBehaviour
         data.health = player.gameObject.GetComponent<ThirdPersonMovement>().health;
         data.score = scoreManager.gameObject.GetComponent<ScoreManager>().score;
 
-        PlayerPrefs.SetString("savedScene", SceneManager.GetActiveScene().name);
+        
 
 
         bf.Serialize(file, data);
         file.Close();
+
         Debug.Log("Game data saved!");
     }
 

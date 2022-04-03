@@ -140,9 +140,12 @@ public class UIButtonManager : MonoBehaviour
 
         if (PlayerPrefs.GetString("savedScene") != null)
         {
+            string sceneToLoad = PlayerPrefs.GetString("savedScene");
             newGameCheck = 0;
             PlayerPrefs.SetInt("NewGameCheck", newGameCheck);
-            SceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
+            Debug.Log(sceneToLoad);
+            SceneManager.LoadScene(sceneToLoad);
+            
         }
         else
         {

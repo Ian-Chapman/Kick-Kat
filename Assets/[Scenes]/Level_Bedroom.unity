@@ -27635,6 +27635,56 @@ PrefabInstance:
       propertyPath: UICanvas
       value: 
       objectReference: {fileID: 1388883983}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 960341840}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1388883984}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1388883984}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSaveButton_Pressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayButtonAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnSaveButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveLoad, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIButtonManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 226803142958400094, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UIButtonManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 226803143246710174, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -27727,6 +27777,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eccc2672f2e26ac4e854d4843f6bf052, type: 3}
+--- !u!114 &960341840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 226803143643415065, guid: eccc2672f2e26ac4e854d4843f6bf052,
+    type: 3}
+  m_PrefabInstance: {fileID: 960341839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868461598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706f59e7e6d23204ba22165a90433c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &970270994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29073,15 +29135,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.046724945
+      value: 0.046724953
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9152465
+      value: 0.9152466
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.11125072
+      value: -0.11125073
       objectReference: {fileID: 0}
     - target: {fileID: 1180884905, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x

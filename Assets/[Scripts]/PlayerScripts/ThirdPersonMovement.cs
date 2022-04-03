@@ -60,19 +60,22 @@ public class ThirdPersonMovement : MonoBehaviour
     public Slider healthBar;
     public TMP_Text healthBarValueLabel;
 
+    public GameObject scoreManager;
+
     void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         carmellaAnimationManager = gameObject.GetComponent<CarmellaAnimationManager>();
-        roombaController = gameObject.GetComponent<RoombaController>();;
+        roombaController = gameObject.GetComponent<RoombaController>();
 
+        scoreManager = GameObject.Find("ScoreManager");
 
         inventory = new Inventory(UseItem);
         uiInventory.SetInventory(inventory);
 
         ItemWorld.SpawnItemWorld(new Vector3(-3, 2, 3), new Item { itemType = Item.ItemType.Points, amount = 1 });
 
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_Kitchen"))
+        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("MainMenu"))
         {
             if (PlayerPrefs.GetInt("NewGameCheck") == 0) // if the kitchen scene loads and it's not a new game (0 == false)
             {
@@ -80,6 +83,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
                 healthBar.value = health;
                 healthBarValueLabel.text = healthBar.value.ToString();
+                //scoreManager.GetComponent<ScoreManager>().score = 
 
 
             }
