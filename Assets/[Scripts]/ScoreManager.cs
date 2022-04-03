@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        scoreTxt.text = "Score: " + score;
+        scoreTxt.text = score.ToString();
     }
 
     public void IncreaseScore(int amount)

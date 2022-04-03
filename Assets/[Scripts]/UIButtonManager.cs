@@ -7,13 +7,25 @@ public class UIButtonManager : MonoBehaviour
 {
     public AudioSource audioSource;
 
+    [Header("Main Menu UI")]
+    public GameObject title;
+    public GameObject newGameButton;
+    public GameObject continueButton;
+    public GameObject howToPlayButton;
+    public GameObject optionsButton;
+    public GameObject quitButton;
+
+    [Header("How to Play UI")]
+    public GameObject howToPlayTitle;
+    public GameObject instructionsPanel;
+    
     [Header("Option Panels")]
     public GameObject allOptionsMenu;
     public GameObject resolutionPanel;
     public GameObject audioPanel;
     public GameObject keybindsPanel;
 
-    [Header ("Back Buttons")]
+    [Header("Back Buttons")]
     public GameObject backToMainMenuButton;
     public GameObject backFromResolutionPanel;
     public GameObject backFromAudioPanelButton;
@@ -37,17 +49,23 @@ public class UIButtonManager : MonoBehaviour
 
     public GameObject saveLoad;
 
+    private void Awake()
+    {
+        howToPlayTitle.SetActive(false);
+        instructionsPanel.SetActive(false);
+    }
+
     private void Start()
     {
         if (keybindsPanel != null)
             keybindsPanel.SetActive(false);
-        
+
 
         //audioSource = gameObject.GetComponent<AudioSource>();
 
-        if(pauseMenu != null) //should fix issues regarding the pause menu not being pressent on the main menu
+        if (pauseMenu != null) //should fix issues regarding the pause menu not being pressent on the main menu
         {
-            pauseMenu.SetActive(false); 
+            pauseMenu.SetActive(false);
         }
 
         allOptionsMenu.SetActive(true);
@@ -66,8 +84,6 @@ public class UIButtonManager : MonoBehaviour
         inventory.SetActive(true);
         healthBar.SetActive(true);
         onScreenControls.SetActive(true);
-
-
 
     }
 
@@ -104,7 +120,7 @@ public class UIButtonManager : MonoBehaviour
         newGameCheck = 1;
         PlayerPrefs.SetInt("NewGameCheck", newGameCheck); // when we load the play scene we need to see if the game is new or loaded
         SceneManager.LoadScene("Level_Kitchen");
-       //audioSource.Stop();
+        //audioSource.Stop();
     }
 
     public void OnContinueButtonPressed()
@@ -113,6 +129,33 @@ public class UIButtonManager : MonoBehaviour
         PlayerPrefs.SetInt("NewGameCheck", newGameCheck); // when we load the play scene we need to see if the game is new or loaded
         SceneManager.LoadScene("Level_Kitchen");
     }
+
+    public void OnHowToPlayButtonPressed()
+    {
+        howToPlayTitle.SetActive(true);
+        instructionsPanel.SetActive(true);
+
+        title.SetActive(false);
+        newGameButton.SetActive(false);
+        continueButton.SetActive(false);
+        howToPlayButton.SetActive(false);
+        optionsButton.SetActive(false);
+        quitButton.SetActive(false);
+    }
+
+    public void OnHowToPlayBackButtonPressed()
+    {
+        title.SetActive(true);
+        newGameButton.SetActive(true);
+        continueButton.SetActive(true);
+        howToPlayButton.SetActive(true);
+        optionsButton.SetActive(true);
+        quitButton.SetActive(true);
+
+        howToPlayTitle.SetActive(false);
+        instructionsPanel.SetActive(false);
+    }
+
 
     public void OnOptionsButtonPressed()
     {
