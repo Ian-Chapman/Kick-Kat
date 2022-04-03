@@ -13,6 +13,7 @@ public class DogKnighBehaviour : MonoBehaviour
     void Start()
     {
         isAngry = true;
+        ScoreManager.scoreGoalAchievedEvent.AddListener(() => gameObject.SetActive(false));
     }
 
     // Update is called once per frame
