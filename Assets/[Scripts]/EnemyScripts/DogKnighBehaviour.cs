@@ -14,6 +14,7 @@ public class DogKnighBehaviour : MonoBehaviour
     {
         isAngry = true;
         ScoreManager.scoreGoalAchievedEvent.AddListener(() => gameObject.SetActive(false));
+        target = GameObject.Find("CatGirlChar");
     }
 
     // Update is called once per frame
