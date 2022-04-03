@@ -47,6 +47,16 @@ PrefabInstance:
       propertyPath: particleColor.key1.r
       value: 0.30980393
       objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
+      propertyPath: breakableSoundClips.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104108137813402350, guid: c5c37e8db2bfa3442b71d479d9e4b052,
+        type: 3}
+      propertyPath: breakableSoundClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 21f6ef6809d4e60438b33c66326d5aff, type: 3}
     - target: {fileID: 7123399993186890786, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: m_RootOrder

@@ -40,7 +40,9 @@ public class UIButtonManager : MonoBehaviour
     public GameObject inventory;
     public GameObject healthBar;
     public GameObject onScreenControls;
-    //add screen mounted controls here later.
+
+
+
 
 
     public GameObject pauseMenu;
@@ -88,6 +90,10 @@ public class UIButtonManager : MonoBehaviour
         onScreenControls.SetActive(true);
 
         //UICanvas.SetActive(true);
+
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
 
     }
 
@@ -314,15 +320,18 @@ public class UIButtonManager : MonoBehaviour
 
     //========================================================================= WIN SCREEN BUTTONS ==================================================================
 
-    public void OnReplayKitchenLevelButtonPressed()
+    public void OnReplayLevelButtonPressed()
     {
-        SceneManager.LoadScene("Level_Kitchen");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
-    public void OnNextLevelButtonPressed()
-    {
-        //load next level
-    }
+
+
+    //public void OnNextLevelButtonPressed()
+    //{
+        
+    //    check what previous scene was, then load the next scene after the game over scene
+    //}
 
 
     //========================================================================= BUTTON AUDIO ==================================================================

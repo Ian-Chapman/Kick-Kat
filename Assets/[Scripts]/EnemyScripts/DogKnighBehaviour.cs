@@ -8,6 +8,7 @@ public class DogKnighBehaviour : MonoBehaviour
     public Animator animator;
     private bool isAngry;
     public GameObject target;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -28,13 +29,21 @@ public class DogKnighBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
-
         if (other.gameObject.tag == "Player")
         {
-            if (isAngry)
-                animator.SetTrigger("isInRange");
+            //if (isAngry)
+            animator.SetBool("isInRange", true);
+            audioSource.Play();
         }
-
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            animator.SetBool("isInRange", false);
+            audioSource.Stop();
+        }
+    }
+
 }

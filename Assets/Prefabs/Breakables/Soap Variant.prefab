@@ -110,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 7123399993186890789, guid: c5c37e8db2bfa3442b71d479d9e4b052,
         type: 3}
       propertyPath: m_Name
-      value: Soap
+      value: Soap Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5c37e8db2bfa3442b71d479d9e4b052, type: 3}

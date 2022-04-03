@@ -6,6 +6,9 @@ public class SplashScript : MonoBehaviour
 {
     [SerializeField]
     private ParticleSystem splashEffect;
+    [SerializeField]
+    private AudioSource audioSource;
+
 
     private GameObject player;
 
@@ -16,6 +19,7 @@ public class SplashScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //audioSource.Play();
         splashEffect.transform.position = GetComponent<Collider>().ClosestPoint(player.transform.position);
     }
 }

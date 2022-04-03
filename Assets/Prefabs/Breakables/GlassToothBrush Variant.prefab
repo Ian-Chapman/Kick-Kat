@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5781460178273703128, guid: c3ded339ba5002f46b79bb318dea3662,
         type: 3}
       propertyPath: m_Name
-      value: GlassToothBrush
+      value: GlassToothBrush Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5781460178273703135, guid: c3ded339ba5002f46b79bb318dea3662,
         type: 3}

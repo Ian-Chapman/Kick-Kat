@@ -21,8 +21,13 @@ public class DestructibleComponent : MonoBehaviour
     private List<ParticleSystem> particleSystems;
     [SerializeField]
     private ParticleSystem bubbleSystem;
+   
+    [SerializeField]
+    List<AudioClip> breakableSoundClips;
     [SerializeField]
     private AudioSource audioSource;
+    [SerializeField]
+    public float pitchVariance = .15f;
 
     [SerializeField]
     private SpeechBubbleSet bubbleSet;
@@ -66,11 +71,11 @@ public class DestructibleComponent : MonoBehaviour
 
             if (audioSource != null)
             {
-                if (audioSource.isPlaying)
-                    audioSource.Stop();
-                else
-                    audioSource.Play();
-
+                //if (audioSource.isPlaying)
+                //    audioSource.Stop();
+                //else
+                //    audioSource.Play();
+                PlayBreakableSound();
             }
 
             // Destroy Prop
@@ -79,5 +84,12 @@ public class DestructibleComponent : MonoBehaviour
                 ScoreManager.Instance.IncreaseScore(scoreValue);
             isDestroyed = true;
         }
+    }
+
+    public void PlayBreakableSound()
+    {
+        audioSource.clip = breakableSoundClips[Random.Range(0, breakableSoundClips.Count)];
+        audioSource.pitch = 1.0f + Random.Range(-pitchVariance, pitchVariance);
+        audioSource.Play();
     }
 }

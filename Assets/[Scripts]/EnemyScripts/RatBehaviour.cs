@@ -6,7 +6,13 @@ public class RatBehaviour : MonoBehaviour
 {
     public Animator ratAnimator;
     public Transform player;
+
+    [SerializeField]
     public AudioSource audioSource;
+    [SerializeField]
+    public List<AudioClip> clips;
+    [SerializeField]
+    public float pitchVariance = .15f;
 
     public List<Transform> patrolPoints = new List <Transform>();
 
@@ -69,6 +75,7 @@ public class RatBehaviour : MonoBehaviour
             (other.gameObject.tag == "Right Paw") || (other.gameObject.tag == "Left Paw"))
         {
             ratHealth--;
+            PlayHitSound();
             Debug.Log(ratHealth);
         }
 
@@ -83,6 +90,7 @@ public class RatBehaviour : MonoBehaviour
         if (ratHealth <= 0)
         {
             StartCoroutine(RatDeath());
+            PlayDeathSound();
         }
     }
 
@@ -93,6 +101,19 @@ public class RatBehaviour : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
 
+    }
+
+    public void PlayDeathSound()
+    {
+        audioSource.clip = clips[1];
+        audioSource.Play();
+    }
+
+    public void PlayHitSound()
+    {
+        audioSource.clip = clips[0];
+        audioSource.pitch = 1.0f + Random.Range(-pitchVariance, pitchVariance);
+        audioSource.Play();
     }
 
 }

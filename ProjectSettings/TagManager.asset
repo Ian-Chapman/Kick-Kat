@@ -22,6 +22,7 @@ TagManager:
   - Left Foot
   - Right Paw
   - Left Paw
+  - Brandon
   layers:
   - Default
   - TransparentFX
