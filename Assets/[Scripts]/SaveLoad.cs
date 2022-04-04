@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.SceneManagement;
+using UnityEngine.AI;
 
 [System.Serializable]
 class SaveData
@@ -19,12 +20,16 @@ class SaveData
     public List<float> roombaTransformY;
     public List<float> roombaTransformZ;
 
+    public List<int> inventoryList;
+
 
    
     public int lives;
     public int score;
     public int health;
     public string scene;
+
+
 
     [System.NonSerialized]
     public GameObject ratGo;
@@ -50,6 +55,8 @@ class SaveData
         roombaTransformX = new List<float>();
         roombaTransformY = new List<float>();
         roombaTransformZ = new List<float>();
+
+        inventoryList = new List<int>();
     }
     
 }
@@ -71,6 +78,9 @@ public class SaveLoad : MonoBehaviour
     {
         int ratCount = 0;
         int roombaCount = 0;
+
+        Inventory inventory;
+       
 
         allObjects = GameObject.FindObjectsOfType<GameObject>();
         PlayerPrefs.SetString("savedScene", SceneManager.GetActiveScene().name);
@@ -109,7 +119,14 @@ public class SaveLoad : MonoBehaviour
         Debug.Log("RoombaCount: " + roombaCount);
 
 
+        inventory = player.GetComponent<ThirdPersonMovement>().inventory;
 
+        //Debug.Log("inventory list: " + inventory.GetItemList());
+
+        foreach (Item item in inventory.GetItemList())
+        {
+            Debug.Log(item.ToString());
+        }
 
         data.playerPosition[0] = player.position.x;
         data.playerPosition[1] = player.position.y;
@@ -168,7 +185,12 @@ public class SaveLoad : MonoBehaviour
 
             for (int i = 0; i < data.roombaTransformX.Count; i++)
             {
-                Instantiate(data.roombaGo, new Vector3(data.roombaTransformX[i], data.roombaTransformY[i], data.roombaTransformZ[i]), Quaternion.identity);
+                GameObject newRoomba = Instantiate(data.roombaGo, new Vector3(data.roombaTransformX[i], data.roombaTransformY[i], data.roombaTransformZ[i] + 0.1f), Quaternion.identity);
+                newRoomba.GetComponent<NavMeshAgent>().enabled = true;
+                newRoomba.GetComponent<RoombaController>().enabled = true;
+                newRoomba.GetComponent<AudioSource>().enabled = true;
+
+                newRoomba.GetComponent<RoombaController>().player = player.gameObject;
             }
 
             var x = data.playerPosition[0];

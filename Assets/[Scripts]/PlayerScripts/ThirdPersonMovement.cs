@@ -43,8 +43,8 @@ public class ThirdPersonMovement : MonoBehaviour
     CarmellaAnimationManager carmellaAnimationManager;
     RoombaController roombaController;
 
-    [SerializeField] private UI_Inventory uiInventory;
-    private Inventory inventory;
+    [SerializeField] public UI_Inventory uiInventory;
+    public Inventory inventory;
 
     public IEnumerator deathCoroutine;
 
