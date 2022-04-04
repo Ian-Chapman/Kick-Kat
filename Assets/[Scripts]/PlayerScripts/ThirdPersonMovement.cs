@@ -32,6 +32,7 @@ public class ThirdPersonMovement : MonoBehaviour
     static public Vector3 playerVelocity;
 
     static public bool groundedPlayer;
+    private bool isBuffed = false;
     private float playerSpeed = 2.0f;
     static public float jumpHeight = 10.0f;
     static public float gravityValue = -9.81f;
@@ -112,7 +113,8 @@ public class ThirdPersonMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-
+            if (isBuffed)
+                speed *= 1.4f;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
@@ -267,9 +269,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public IEnumerator TempBuff()
     {
-        speed *= 2;
+        isBuffed = true;
         yield return new WaitForSeconds(5);
-        speed /= 2;
+        isBuffed = false;
     }
 
     /// UI Button Functions ///

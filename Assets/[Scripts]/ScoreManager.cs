@@ -13,15 +13,14 @@ public class ScoreManager : MonoBehaviour
     public static UnityEvent scoreGoalAchievedEvent = new UnityEvent();
     bool goalActivated = false;
 
-    public int score;
+    public int score = 0;
     [Header("UI")]
     public TextMeshProUGUI scoreTxt;
     public TextMeshProUGUI scoreGoalText;
     public Animator goalAchievedAnimator;
 
     private void Awake()
-    {
-        score = 0;
+    { 
         Instance = this;
         DontDestroyOnLoad(this);
 
