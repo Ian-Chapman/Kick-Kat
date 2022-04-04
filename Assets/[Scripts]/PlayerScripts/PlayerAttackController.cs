@@ -44,10 +44,12 @@ public class PlayerAttackController : MonoBehaviour
             return;
 
         //prevent animation bug where player is stuck at end of finishing kick animation
-        if (numOfClicks <=0)
-        {
-            animator.SetBool("isKick1", false);
-        }
+        //if (numOfClicks <=0)
+        //{
+        //    //animator.SetBool("isKick1", false);
+        //    //animator.SetBool("isFinishingKick", false);
+        //    return4();
+        //}
 
         if (Input.GetKeyDown(PlayerKeybinds.PlayerPunch))
         {
@@ -122,6 +124,10 @@ public class PlayerAttackController : MonoBehaviour
         animator.SetBool("isKick2", false);
         animator.SetBool("isKick3", false);
         animator.SetBool("isFinishingKick", false);
+
+        leftFootCollider.enabled = false;
+        rightFootCollider.enabled = false;
+
         numOfClicks = 0;
     }
 
