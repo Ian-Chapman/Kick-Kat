@@ -27,6 +27,17 @@ public class Item
         }
     }
 
+    public String GetName()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.Points: return "Points";
+            case ItemType.PowerUp: return "PowerUp";
+            case ItemType.tempPup: return "TempUp";
+        }
+    }
+
     public bool IsStackable()
     {
         switch (itemType)

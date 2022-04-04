@@ -20,7 +20,7 @@ class SaveData
     public List<float> roombaTransformY;
     public List<float> roombaTransformZ;
 
-    public List<int> inventoryList;
+    public List<string> inventoryList;
 
 
    
@@ -56,7 +56,7 @@ class SaveData
         roombaTransformY = new List<float>();
         roombaTransformZ = new List<float>();
 
-        inventoryList = new List<int>();
+        inventoryList = new List<string>();
     }
     
 }
@@ -125,7 +125,7 @@ public class SaveLoad : MonoBehaviour
 
         foreach (Item item in inventory.GetItemList())
         {
-            Debug.Log(item.ToString());
+            data.inventoryList.Add(item.GetName());
         }
 
         data.playerPosition[0] = player.position.x;
@@ -191,6 +191,21 @@ public class SaveLoad : MonoBehaviour
                 newRoomba.GetComponent<AudioSource>().enabled = true;
 
                 newRoomba.GetComponent<RoombaController>().player = player.gameObject;
+            }
+
+            for (int i = 0; i < data.inventoryList.Count; i++)
+            {
+                switch (data.inventoryList[i])
+                {
+                    case "Points":
+                        player.gameObject.GetComponent<ThirdPersonMovement>().inventory.AddItem(new Item { itemType = Item.ItemType.Points, amount = 1 });
+                        break;
+                    case "PowerUp":
+                        break;
+                    case "TempUp":
+                        break;
+                }
+               
             }
 
             var x = data.playerPosition[0];
