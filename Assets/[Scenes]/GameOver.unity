@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 218246902}
   - component: {fileID: 218246904}
   - component: {fileID: 218246903}
+  - component: {fileID: 218246905}
   m_Layer: 5
   m_Name: ScoreValue
   m_TagString: Untagged
@@ -485,6 +486,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218246901}
   m_CullTransparentMesh: 1
+--- !u!114 &218246905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218246901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b3f306da036e34a9281d737ca475f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &363616254
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,11 +864,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 549672310285594670, guid: 05c0adbc9ce3d8b4b9763687deb4d438,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 549672310285594704, guid: 05c0adbc9ce3d8b4b9763687deb4d438,
         type: 3}
       propertyPath: scoreTxt
       value: 
       objectReference: {fileID: 218246903}
+    - target: {fileID: 549672310285594704, guid: 05c0adbc9ce3d8b4b9763687deb4d438,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 549672310559012906, guid: 05c0adbc9ce3d8b4b9763687deb4d438,
         type: 3}
       propertyPath: m_Name
