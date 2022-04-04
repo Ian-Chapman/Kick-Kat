@@ -5410,6 +5410,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 325308710}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &325308713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 720091601444863566, guid: 59512aa5e6db0d646a33566decf28c46,
+    type: 3}
+  m_PrefabInstance: {fileID: 325308710}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &336525260
 GameObject:
   m_ObjectHideFlags: 0
@@ -12416,9 +12422,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
         type: 3}
+      propertyPath: Rat
+      value: 
+      objectReference: {fileID: 4919084408454258717}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatB
+      value: 
+      objectReference: {fileID: 1176546585}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatC
+      value: 
+      objectReference: {fileID: 687385120}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatD
+      value: 
+      objectReference: {fileID: 2045273542}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatE
+      value: 
+      objectReference: {fileID: 325308713}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1707439584}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatAPatrolPoints
+      value: 
+      objectReference: {fileID: 371351635}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatBPatrolPoints
+      value: 
+      objectReference: {fileID: 2109240295}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatCPatrolPoints
+      value: 
+      objectReference: {fileID: 336525260}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatDPatrolPoints
+      value: 
+      objectReference: {fileID: 1493668525}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatEPatrolPoints
+      value: 
+      objectReference: {fileID: 976007391}
     - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -12450,6 +12506,12 @@ Animator:
 --- !u!4 &687385119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 720091601444758056, guid: 59512aa5e6db0d646a33566decf28c46,
+    type: 3}
+  m_PrefabInstance: {fileID: 687385117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &687385120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 720091601444863566, guid: 59512aa5e6db0d646a33566decf28c46,
     type: 3}
   m_PrefabInstance: {fileID: 687385117}
   m_PrefabAsset: {fileID: 0}
@@ -26544,9 +26606,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
         type: 3}
+      propertyPath: Rat
+      value: 
+      objectReference: {fileID: 4919084408454258717}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatB
+      value: 
+      objectReference: {fileID: 1176546585}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatC
+      value: 
+      objectReference: {fileID: 687385120}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatD
+      value: 
+      objectReference: {fileID: 2045273542}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatE
+      value: 
+      objectReference: {fileID: 325308713}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1707439584}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatAPatrolPoints
+      value: 
+      objectReference: {fileID: 371351635}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatBPatrolPoints
+      value: 
+      objectReference: {fileID: 2109240295}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatCPatrolPoints
+      value: 
+      objectReference: {fileID: 336525260}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatDPatrolPoints
+      value: 
+      objectReference: {fileID: 1493668525}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatEPatrolPoints
+      value: 
+      objectReference: {fileID: 976007391}
     - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -26569,6 +26681,12 @@ PrefabInstance:
       objectReference: {fileID: 943475064}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59512aa5e6db0d646a33566decf28c46, type: 3}
+--- !u!1 &1176546585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 720091601444863566, guid: 59512aa5e6db0d646a33566decf28c46,
+    type: 3}
+  m_PrefabInstance: {fileID: 1176546584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1178207607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42373,6 +42491,12 @@ PrefabInstance:
       objectReference: {fileID: 427157599}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59512aa5e6db0d646a33566decf28c46, type: 3}
+--- !u!1 &2045273542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 720091601444863566, guid: 59512aa5e6db0d646a33566decf28c46,
+    type: 3}
+  m_PrefabInstance: {fileID: 2045273541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2053520158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49271,16 +49395,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rat
       objectReference: {fileID: 0}
-    - target: {fileID: 720091601444863566, guid: 59512aa5e6db0d646a33566decf28c46,
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: RatB
+      value: 
+      objectReference: {fileID: 1176546585}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatC
+      value: 
+      objectReference: {fileID: 687385120}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatD
+      value: 
+      objectReference: {fileID: 2045273542}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatE
+      value: 
+      objectReference: {fileID: 325308713}
     - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1707439584}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatAPatrolPoints
+      value: 
+      objectReference: {fileID: 371351635}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatBPatrolPoints
+      value: 
+      objectReference: {fileID: 2109240295}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatCPatrolPoints
+      value: 
+      objectReference: {fileID: 336525260}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatDPatrolPoints
+      value: 
+      objectReference: {fileID: 1493668525}
+    - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
+        type: 3}
+      propertyPath: RatEPatrolPoints
+      value: 
+      objectReference: {fileID: 976007391}
     - target: {fileID: 4919084409240051322, guid: 59512aa5e6db0d646a33566decf28c46,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -49303,6 +49467,12 @@ PrefabInstance:
       objectReference: {fileID: 2136464688}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59512aa5e6db0d646a33566decf28c46, type: 3}
+--- !u!1 &4919084408454258717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 720091601444863566, guid: 59512aa5e6db0d646a33566decf28c46,
+    type: 3}
+  m_PrefabInstance: {fileID: 4919084408454258716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4959118207611386853
 PrefabInstance:
   m_ObjectHideFlags: 0

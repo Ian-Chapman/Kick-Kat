@@ -22,7 +22,8 @@ public class RatBehaviour : MonoBehaviour
     public int ratHealth = 2;
 
     public float speed = 1;
-    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -99,9 +100,37 @@ public class RatBehaviour : MonoBehaviour
         //yield return new WaitForSeconds(1.5f);
         ratAnimator.SetBool("isDying", true);
         yield return new WaitForSeconds(1.5f);
+        //RemoveRatPatrolPoints();
         Destroy(gameObject);
-
     }
+
+    //public void RemoveRatPatrolPoints()
+    //{
+    //    if (Rat = null)
+    //    {
+    //        RatAPatrolPoints.SetActive(false);
+    //    }
+
+    //    if (RatB = null)
+    //    {
+    //        RatBPatrolPoints.SetActive(false);
+    //    }
+
+    //    if (RatC = null)
+    //    {
+    //        RatCPatrolPoints.SetActive(false);
+    //    }
+
+    //    if (RatD = null)
+    //    {
+    //        RatDPatrolPoints.SetActive(false);
+    //    }
+
+    //    if (RatE = null)
+    //    {
+    //        RatEPatrolPoints.SetActive(false);
+    //    }
+    //}
 
     public void PlayDeathSound()
     {
