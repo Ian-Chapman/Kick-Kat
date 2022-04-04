@@ -34,7 +34,7 @@ public class Item
             default:
             case ItemType.Points: return "Points";
             case ItemType.PowerUp: return "PowerUp";
-            case ItemType.tempPup: return "TempUp";
+            case ItemType.tempPup: return "TempPup";
         }
     }
 

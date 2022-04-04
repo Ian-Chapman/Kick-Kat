@@ -203,7 +203,7 @@ public class SaveLoad : MonoBehaviour
                     case "PowerUp":
                         player.gameObject.GetComponent<ThirdPersonMovement>().inventory.AddItem(new Item { itemType = Item.ItemType.PowerUp, amount = 1 });
                         break;
-                    case "TempUp":
+                    case "TempPup":
                         player.gameObject.GetComponent<ThirdPersonMovement>().inventory.AddItem(new Item { itemType = Item.ItemType.tempPup, amount = 1 });
                         break;
                 }
