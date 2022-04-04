@@ -5044,7 +5044,7 @@ MonoBehaviour:
   m_text: EXIT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 57e334c5df519484bab062041209cb67, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29276,15 +29276,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.046724945
+      value: 0.046724953
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9152465
+      value: 0.9152466
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.11125072
+      value: -0.11125073
       objectReference: {fileID: 0}
     - target: {fileID: 1180884905, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
