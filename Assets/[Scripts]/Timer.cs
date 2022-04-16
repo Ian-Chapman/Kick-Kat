@@ -7,7 +7,7 @@ using System;
 
 public class Timer : MonoBehaviour
 {
-    public TextMeshProUGUI timerTxt;
+    public TextMeshProUGUI timerText;
     public float timeLeft;
 
 
@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     void Update()
     {
         timeLeft -= Time.deltaTime;
-        timerTxt.text = "" + Math.Round(timeLeft,2);
+        timerText.text = "" + Math.Round(timeLeft,2);
         if (timeLeft < 0)
         {
             SceneManager.LoadScene("GameOver");
