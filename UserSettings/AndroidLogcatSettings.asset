@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "712KPGS1136623",
     "m_SelectedPackage": {
-        "deviceId": "712KPGS1136623",
-        "name": "com.AnonymousShrewStudios.KickKat",
-        "processId": 29037,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,30 @@
             "deviceId": "712KPGS1136623",
             "name": "com.AnonymousShrewStudios.KickKat",
             "processId": 29037,
+            "exited": false
+        },
+        {
+            "deviceId": "712KPGS1136623",
+            "name": "com.AnonymousShrewStudios.KickKat",
+            "processId": 16645,
+            "exited": false
+        },
+        {
+            "deviceId": "712KPGS1136623",
+            "name": "com.AnonymousShrewStudios.KickKat",
+            "processId": 17364,
+            "exited": false
+        },
+        {
+            "deviceId": "712KPGS1136623",
+            "name": "com.AnonymousShrewStudios.KickKat",
+            "processId": 18383,
+            "exited": false
+        },
+        {
+            "deviceId": "712KPGS1136623",
+            "name": "com.AnonymousShrewStudios.KickKat",
+            "processId": 20471,
             "exited": false
         }
     ],

@@ -42,8 +42,8 @@ public class CarmellaAnimationManager : MonoBehaviour
 
     private void Awake()
     {
-        leftFootCollider.enabled = false;
-        rightFootCollider.enabled = false;
+        //leftFootCollider.enabled = false;
+        //rightFootCollider.enabled = false;
         leftPawCollider.enabled = false;
         rightPawCollider.enabled = false;
     }
@@ -196,7 +196,6 @@ public class CarmellaAnimationManager : MonoBehaviour
         else
         {
             animator.SetBool("isRunKick", false);
-            leftFootCollider.enabled = false;
         }
 
     }

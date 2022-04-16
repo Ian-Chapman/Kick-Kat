@@ -19,13 +19,14 @@ public class PlayerAttackController : MonoBehaviour
     public BoxCollider leftPawCollider;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
 
-        rightFootCollider.enabled = false;
-        leftFootCollider.enabled = false;
+        //rightFootCollider.enabled = false;
+        leftFootCollider.enabled = true;
         rightPawCollider.enabled = false;
         leftPawCollider.enabled = false;
     }
@@ -37,6 +38,8 @@ public class PlayerAttackController : MonoBehaviour
         if (Time.time - prevClickTime > maxComboDelay) 
         {
             numOfClicks = 0;
+            rightFootCollider.enabled = false;
+            leftFootCollider.enabled = false;
         }
 
         if (Application.platform == RuntimePlatform.Android ||
@@ -44,16 +47,16 @@ public class PlayerAttackController : MonoBehaviour
             return;
 
         //prevent animation bug where player is stuck at end of finishing kick animation
-        //if (numOfClicks <=0)
+        //if (numOfClicks <= 0)
         //{
-        //    //animator.SetBool("isKick1", false);
-        //    //animator.SetBool("isFinishingKick", false);
+        //    animator.SetBool("isKick1", false);
+        //    animator.SetBool("isFinishingKick", false);
         //    return4();
         //}
 
         if (Input.GetKeyDown(PlayerKeybinds.PlayerPunch))
         {
-        
+
             prevClickTime = Time.time;
             numOfClicks++;
 
@@ -61,6 +64,7 @@ public class PlayerAttackController : MonoBehaviour
             {
                 animator.SetBool("isKick1", true);
                 rightFootCollider.enabled = true;
+                leftFootCollider.enabled = false;
                 PlayAttack();
             }
             //Max possible attacks in combo is clamped at 4
@@ -74,14 +78,14 @@ public class PlayerAttackController : MonoBehaviour
     {
         if (numOfClicks >= 2)
         {
-            animator.SetBool("isKick2", true);
+            animator.SetBool("isKick2", true);       
+            rightFootCollider.enabled = false;
             leftFootCollider.enabled = true;
             PlayAttack();
         }
         else
         {
             animator.SetBool("isKick1", false);
-            rightFootCollider.enabled = false;
             numOfClicks = 0;
         }
     }
@@ -91,13 +95,13 @@ public class PlayerAttackController : MonoBehaviour
         if (numOfClicks >= 3)
         {
             animator.SetBool("isKick3", true);
+            rightFootCollider.enabled = false;
             leftFootCollider.enabled = true;
             PlayAttack();
         }
         else
         {
             animator.SetBool("isKick2", false);
-            leftFootCollider.enabled = false;
             numOfClicks = 0;
         }
     }
@@ -108,12 +112,12 @@ public class PlayerAttackController : MonoBehaviour
         {
             animator.SetBool("isFinishingKick", true);
             rightFootCollider.enabled = true;
+            leftFootCollider.enabled = false;
             PlayAttack();
         }
         else
         {
             animator.SetBool("isKick3", false);
-            leftFootCollider.enabled = false;
             numOfClicks = 0;
         }
     }
@@ -158,12 +162,12 @@ public class PlayerAttackController : MonoBehaviour
         if (numOfClicks == 1)
         {
             animator.SetBool("isKick1", true);
+            rightFootCollider.enabled = true;
+            leftFootCollider.enabled = false;
             PlayAttack();
         }
 
         //Max possible attacks in combo is clamped at 4
         numOfClicks = Mathf.Clamp(numOfClicks, 0, 4);
     }
-
-
 }
