@@ -3,7 +3,11 @@ guid: d6f2c0b15de04444e84ff6699ac4040a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pfItemWorld: {instanceID: 0}
+  - PowerUp1: {fileID: 21300000, guid: a81223c16b982f344b4ca6f65134f350, type: 3}
+  - PowerUp2: {fileID: 21300000, guid: dfd89be47f371bd468ed1e3fddcbdbe9, type: 3}
+  - PowerUp3: {fileID: 21300000, guid: ead5214ca3fac5b4fa6a67741ca0f40b, type: 3}
   executionOrder: -10
   icon: {instanceID: 0}
   userData: 

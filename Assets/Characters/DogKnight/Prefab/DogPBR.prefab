@@ -1398,7 +1398,8 @@ AudioSource:
   m_GameObject: {fileID: 8422892626600285392}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 38000747a0778f840a0210a032df3896,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c6abf9e2d716f8143a0fa370cce6e877, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2719,7 +2720,7 @@ CapsuleCollider:
   m_Height: 1.4753107
   m_Direction: 1
   m_Center: {x: -0.01079502, y: -0.56778514, z: -0.39851907}
---- !u!136 &7810984479802961316
+--- !u!136 &3001242223390068918
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2733,7 +2734,7 @@ CapsuleCollider:
   m_Height: 1.3304198
   m_Direction: 1
   m_Center: {x: 0.00000019256234, y: -0.4953395, z: 0.0034733256}
---- !u!136 &3001242223390068918
+--- !u!136 &7810984479802961316
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

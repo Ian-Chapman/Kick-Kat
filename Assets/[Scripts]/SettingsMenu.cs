@@ -11,7 +11,8 @@ public class SettingsMenu : MonoBehaviour
     public TMP_Dropdown kickDD;
     public TMP_Dropdown modeDD;
 
-    public AudioMixer audioMixer;
+    public AudioMixer MusicMixer,  SFXMixer;
+
 
     private void OnEnable()
     {
@@ -28,11 +29,14 @@ public class SettingsMenu : MonoBehaviour
             modeDD.onValueChanged.AddListener(SetUIMode);
     }
 
-    public void SetVolume(float volume)
+    public void SetMusicVolume(float volume)
     {
-        audioMixer.SetFloat("MixerVolume", volume);
+        MusicMixer.SetFloat("MixerVolume", volume);
     }
-
+    public void SetSFXVolume(float volume)
+    {
+        SFXMixer.SetFloat("MixerVolume", volume);
+    }
     public void SetJumpKeyBind(int index)
     {
         if (PlayerKeybinds.Keybinds.TryGetValue(index, out string str))

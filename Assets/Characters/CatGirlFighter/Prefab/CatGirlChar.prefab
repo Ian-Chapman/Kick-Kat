@@ -4154,6 +4154,7 @@ MonoBehaviour:
   saveLoad: {fileID: 0}
   healthBar: {fileID: 0}
   healthBarValueLabel: {fileID: 0}
+  scoreManager: {fileID: 0}
 --- !u!82 &8587725167264402459
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4163,7 +4164,7 @@ AudioSource:
   m_GameObject: {fileID: 1919004652221168}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 0beba8c629a0cb4408d1f92eaeb001d6,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 38000747a0778f840a0210a032df3896,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
@@ -4291,7 +4292,6 @@ MonoBehaviour:
   leftFootCollider: {fileID: 2158808521891362003}
   rightPawCollider: {fileID: 1708404252206542110}
   leftPawCollider: {fileID: 4724555744563702975}
-  isAttacking: 0
 --- !u!136 &1342447464069711774
 CapsuleCollider:
   m_ObjectHideFlags: 0

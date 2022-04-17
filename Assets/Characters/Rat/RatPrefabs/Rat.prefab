@@ -924,7 +924,8 @@ AudioSource:
   m_GameObject: {fileID: 720091601444863566}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 38000747a0778f840a0210a032df3896,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1037,16 +1038,6 @@ MonoBehaviour:
   - {fileID: 0}
   ratHealth: 3
   speed: 1
-  Rat: {fileID: 720091601444863566}
-  RatB: {fileID: 0}
-  RatC: {fileID: 0}
-  RatD: {fileID: 0}
-  RatE: {fileID: 0}
-  RatAPatrolPoints: {fileID: 0}
-  RatBPatrolPoints: {fileID: 0}
-  RatCPatrolPoints: {fileID: 0}
-  RatDPatrolPoints: {fileID: 0}
-  RatEPatrolPoints: {fileID: 0}
 --- !u!1 &720091601444863568
 GameObject:
   m_ObjectHideFlags: 0

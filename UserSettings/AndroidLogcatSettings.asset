@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
     "m_SelectedDeviceId": "712KPGS1136623",
+=======
+    "m_SelectedDeviceId": "bcfec43f",
+>>>>>>> Stashed changes
     "m_SelectedPackage": {
         "deviceId": "",
         "name": "",
@@ -9,6 +13,7 @@
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
+<<<<<<< Updated upstream
             "deviceId": "712KPGS1136623",
             "name": "com.AnonymousShrewStudios.KickKat",
             "processId": 27011,
@@ -42,6 +47,11 @@
             "deviceId": "712KPGS1136623",
             "name": "com.AnonymousShrewStudios.KickKat",
             "processId": 20471,
+=======
+            "deviceId": "bcfec43f",
+            "name": "com.google.android.apps.docs",
+            "processId": 18737,
+>>>>>>> Stashed changes
             "exited": false
         }
     ],

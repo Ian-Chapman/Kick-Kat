@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pfItemWorld: {fileID: 2507696262450862569, guid: f5951a4256068f34898b9fccfb28e361,
     type: 3}
-  PowerUp1: {fileID: -1213410185, guid: acaf423b92533b8429beef56d68e081e, type: 3}
-  PowerUp2: {fileID: 97302579, guid: acaf423b92533b8429beef56d68e081e, type: 3}
-  PowerUp3: {fileID: 1470929018, guid: acaf423b92533b8429beef56d68e081e, type: 3}
+  PowerUp1: {fileID: 21300000, guid: a81223c16b982f344b4ca6f65134f350, type: 3}
+  PowerUp2: {fileID: 21300000, guid: dfd89be47f371bd468ed1e3fddcbdbe9, type: 3}
+  PowerUp3: {fileID: 21300000, guid: ead5214ca3fac5b4fa6a67741ca0f40b, type: 3}
