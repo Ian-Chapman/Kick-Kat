@@ -42,7 +42,7 @@ public class UIButtonManager : MonoBehaviour
     public GameObject onScreenControls;
 
 
-
+    public GameObject GameHUD;
 
 
     public GameObject pauseMenu;
@@ -91,6 +91,7 @@ public class UIButtonManager : MonoBehaviour
 
         //UICanvas.SetActive(true);
 
+        
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
@@ -205,6 +206,10 @@ public class UIButtonManager : MonoBehaviour
     {
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
+
+        GameHUD = GameObject.Find("GameHUD");
+
+        GameHUD.SetActive(false);
         audioSource.Pause();
 
         //UICanvas.SetActive(false);
@@ -235,6 +240,7 @@ public class UIButtonManager : MonoBehaviour
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
+        GameHUD.SetActive(true);
         audioSource.Play();
 
         //UICanvas.SetActive(true);
