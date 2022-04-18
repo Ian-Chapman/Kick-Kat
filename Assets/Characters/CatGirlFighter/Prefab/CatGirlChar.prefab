@@ -4146,6 +4146,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 79f5b25a2842c0c47a02b51c44e5bb9a, type: 3}
   - {fileID: 8300000, guid: c3fa8aa73c63fd2439cbdc28da7e7b87, type: 3}
   - {fileID: 8300000, guid: 696b052b2e5a64a4b8f928cd79e1956b, type: 3}
+  - {fileID: 8300000, guid: e6d9a2c7ec65b6d4795f87146e30798c, type: 3}
+  - {fileID: 8300000, guid: 655fdeb96cdac4141a23a497d424e39d, type: 3}
   turnSmoothTime: 0.1
   uiInventory: {fileID: 0}
   lives: 9

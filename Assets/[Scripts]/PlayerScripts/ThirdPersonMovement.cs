@@ -158,6 +158,9 @@ public class ThirdPersonMovement : MonoBehaviour
         ItemWorld itemWorld = other.GetComponent<ItemWorld>();
         if (itemWorld != null)
         {
+            audioSource.clip = audioClips[5];
+            audioSource.Play();
+
             inventory.AddItem(itemWorld.GetItem());
             itemWorld.DestroySelf();
         }
@@ -204,7 +207,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public void UseItem(Item item)
     {
-        
+        audioSource.clip = audioClips[6];
+        audioSource.Play();
+
         switch (item.itemType)
         {
             case Item.ItemType.Points:

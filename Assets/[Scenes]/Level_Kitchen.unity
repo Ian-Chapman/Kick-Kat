@@ -18925,11 +18925,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180884905, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7775891
+      value: 2.215867
       objectReference: {fileID: 0}
     - target: {fileID: 1257495945, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7775891
+      value: 2.215867
       objectReference: {fileID: 0}
     - target: {fileID: 1707439598, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Enabled
@@ -18953,7 +18953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2003139210, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7775891
+      value: 2.215867
       objectReference: {fileID: 0}
     - target: {fileID: 1919004652221168, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Name

@@ -27,9 +27,9 @@ public class HazardScript : MonoBehaviour
                 }
             }
 
-            if (this.tag == "Glass")
+            if (TryGetComponent(out AudioSource AS))
             {
-                this.GetComponent<AudioSource>().Play();
+                AS.Play();
             }
         }
     }

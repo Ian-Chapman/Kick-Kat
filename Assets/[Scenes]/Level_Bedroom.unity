@@ -29243,7 +29243,7 @@ PrefabInstance:
       objectReference: {fileID: 660043961}
     - target: {fileID: 617022171, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: audioClips.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 617022171, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: audioClips.Array.data[0]
@@ -29265,6 +29265,14 @@ PrefabInstance:
       propertyPath: audioClips.Array.data[4]
       value: 
       objectReference: {fileID: 8300000, guid: 696b052b2e5a64a4b8f928cd79e1956b, type: 3}
+    - target: {fileID: 617022171, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
+      propertyPath: audioClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: e6d9a2c7ec65b6d4795f87146e30798c, type: 3}
+    - target: {fileID: 617022171, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
+      propertyPath: audioClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 655fdeb96cdac4141a23a497d424e39d, type: 3}
     - target: {fileID: 617022171, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: audioClips.Array.data[9]
       value: 
@@ -29291,15 +29299,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.046724945
+      value: 0.046724953
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9152465
+      value: 0.9152466
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.11125072
+      value: -0.11125073
       objectReference: {fileID: 0}
     - target: {fileID: 1180884905, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
