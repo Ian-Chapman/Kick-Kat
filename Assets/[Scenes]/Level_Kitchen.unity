@@ -44474,6 +44474,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 946754715}
+    - target: {fileID: 226803142634689469, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: kitchenAudioSource
+      value: 
+      objectReference: {fileID: 946754715}
     - target: {fileID: 226803142857170253, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: m_IsActive

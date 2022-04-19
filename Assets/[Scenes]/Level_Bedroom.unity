@@ -27781,6 +27781,16 @@ PrefabInstance:
       propertyPath: UICanvas
       value: 
       objectReference: {fileID: 1388883983}
+    - target: {fileID: 226803142634689469, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 946754715}
+    - target: {fileID: 226803142634689469, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: bedroomAudioSource
+      value: 
+      objectReference: {fileID: 946754715}
     - target: {fileID: 226803142895215781, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: scoreGoal
@@ -29299,15 +29309,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.046724953
+      value: 0.046724945
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9152466
+      value: 0.9152465
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.11125073
+      value: -0.11125072
       objectReference: {fileID: 0}
     - target: {fileID: 1180884905, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x

@@ -45931,6 +45931,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 226803142634689469, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 946754715}
+    - target: {fileID: 226803142634689469, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: bathroomAudioSource
+      value: 
+      objectReference: {fileID: 946754715}
     - target: {fileID: 226803142639627480, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: m_RootOrder
@@ -46004,12 +46014,12 @@ PrefabInstance:
     - target: {fileID: 226803143344032195, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 226803143643415064, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 226803143789071336, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
@@ -46100,6 +46110,11 @@ PrefabInstance:
     - target: {fileID: 8650645588086683485, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054151625264746301, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

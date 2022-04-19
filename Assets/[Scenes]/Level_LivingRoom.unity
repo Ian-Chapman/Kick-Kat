@@ -26969,15 +26969,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.046724945
+      value: 0.046724953
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9152465
+      value: 0.9152466
       objectReference: {fileID: 0}
     - target: {fileID: 1180884904, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.11125072
+      value: -0.11125073
       objectReference: {fileID: 0}
     - target: {fileID: 1180884905, guid: 0d13921c68a31734ca406944b62778ee, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
@@ -41398,6 +41398,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 226803142634689469, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 946754715}
+    - target: {fileID: 226803142634689469, guid: eccc2672f2e26ac4e854d4843f6bf052,
+        type: 3}
+      propertyPath: livingroomAudioSource
+      value: 
+      objectReference: {fileID: 946754715}
     - target: {fileID: 1347557742611204152, guid: eccc2672f2e26ac4e854d4843f6bf052,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
