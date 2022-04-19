@@ -365,9 +365,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 8e680000
       m_LastClickedID: 0
-      m_ExpandedIDs: cefaffff
+      m_ExpandedIDs: 0cf6ffffdef9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -617,9 +617,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.1900432, y: 0.9850622, z: 13.185755}
+    m_Target: {x: -1.1192513, y: 0.5359303, z: 13.361946}
     speed: 2
-    m_Value: {x: -1.1900432, y: 0.9850622, z: 13.185755}
+    m_Value: {x: -1.1192513, y: 0.5359303, z: 13.361946}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -666,9 +666,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.119225025, y: 0.6400435, z: 0.10144766, w: 0.75222725}
+    m_Target: {x: -0.053648584, y: 0.622254, z: 0.042811763, w: 0.7798056}
     speed: 2
-    m_Value: {x: -0.11922457, y: 0.64004105, z: 0.10144727, w: 0.7522244}
+    m_Value: {x: -0.05364837, y: 0.6222516, z: 0.042811595, w: 0.77980256}
   m_Size:
     m_Target: 1.3034948
     speed: 2
@@ -937,22 +937,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animations/Carmella Animations
+    - Assets/[Scenes]
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Animations/Carmella Animations
+  - Assets/[Scenes]
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Semester 6\Mobile Game Development II\Kick-Kat
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d8670000
-    m_LastClickedID: 26584
-    m_ExpandedIDs: 00000000c2670000c4670000c6670000c8670000ca670000cc670000ce670000d0670000d2670000d4670000d6670000d8670000da67000014680000
+    m_SelectedIDs: 42680000
+    m_LastClickedID: 26690
+    m_ExpandedIDs: 00000000f6670000f8670000fa670000fc670000fe67000000680000026800000468000006680000086800000a6800000c6800000e68000048680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -980,7 +980,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c2670000c4670000c6670000c8670000ca670000cc670000ce670000d0670000d2670000d4670000d6670000d8670000da670000
+    m_ExpandedIDs: 00000000f6670000f8670000fa670000fc670000fe67000000680000026800000468000006680000086800000a6800000c6800000e680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000b07509004c7e0000ac7a00003a490100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
