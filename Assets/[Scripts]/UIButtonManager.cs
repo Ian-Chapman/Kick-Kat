@@ -100,19 +100,20 @@ public class UIButtonManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("escape") && isPaused == false)
-        {
-            isPaused = true;
-            Time.timeScale = 0;
-            pauseMenu.SetActive(true);
-        }
+        //if (Input.GetKeyDown("escape") && isPaused == false)
+        //{
+        //    isPaused = true;
+        //    Time.timeScale = 0;
+        //    pauseMenu.SetActive(true);
+        //}
 
-        else if (Input.GetKeyDown("escape") && isPaused == true)
-        {
-            isPaused = false;
-            Time.timeScale = 1;
-            pauseMenu.SetActive(false);
-        }
+
+        //else if (Input.GetKeyDown("escape") && isPaused == true)
+        //{
+        //    isPaused = false;
+        //    Time.timeScale = 1;
+        //    pauseMenu.SetActive(false);
+        //}
     }
 
 
@@ -204,12 +205,12 @@ public class UIButtonManager : MonoBehaviour
 
     public void OnPauseButtonPressed()
     {
+        GameHUD = GameObject.Find("GameHUD");
+        GameHUD.SetActive(false);
+
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
 
-        GameHUD = GameObject.Find("GameHUD");
-
-        GameHUD.SetActive(false);
         audioSource.Pause();
 
         //UICanvas.SetActive(false);
